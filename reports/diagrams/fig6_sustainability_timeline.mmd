@@ -1,15 +1,32 @@
 flowchart LR
-    Y19["2019: 100 percent renewable electricity<br/>at UK manufacturing sites"] --> Y22["22 Apr 2022: Racing. Green. launched:<br/>net-zero manufacturing by 2030,<br/>supply chain minus 30 percent by 2030,<br/>value-chain net zero by 2039, first BEV 2025"]
-    Y22 --> Y23A["Apr 2023: carbon neutral manufacturing<br/>claimed at Gaydon and St Athan"]
-    Y23A --> Y23B["Jun 2023: Lucid EV technology deal"]
-    Y23B --> Y24A["Feb 2024: first BEV delayed to 2026"]
-    Y24A --> Y24B["2024 report: targets re-based to 2022,<br/>minus 42 percent by 2030, minus 90 percent by 2050,<br/>submitted to SBTi"]
-    Y24B --> Y25A["Feb 2025: BEV moved to before 2030,<br/>5 percent job cut"]
-    Y25A --> Y25B["Apr 2025: UK ZEV mandate eases<br/>rules for small-volume makers"]
-    Y25B --> Y25C["2025: SBTi validation withdrawn,<br/>Scope 3 up 32 percent vs 2022,<br/>women in leadership about 17 percent"]
-    Y25C --> Y26A["Feb 2026: up to 20 percent workforce cut"]
-    Y26A --> Y26B["Oct 2026: first BEV 2033 to 2035,<br/>V8 and V12 kept to 2035"]
-    Y26B --> END(["Current stated end-point:<br/>net zero by 2050"])
+    subgraph A["2019-2023: ambition set"]
+        direction TB
+        Y19["2019: 100 percent renewable<br/>electricity at UK manufacturing sites"]
+        Y22["22 Apr 2022: Racing. Green. launched:<br/>net-zero manufacturing by 2030,<br/>supply chain minus 30 percent by 2030,<br/>value-chain net zero by 2039,<br/>first BEV 2025"]
+        Y23A["Apr 2023: carbon neutral manufacturing<br/>claimed at Gaydon and St Athan"]
+        Y23B["Jun 2023: Lucid EV technology deal"]
+        Y19 --> Y22 --> Y23A --> Y23B
+    end
+
+    subgraph B["2024-2025: re-based"]
+        direction TB
+        Y24A["Feb 2024: first BEV delayed to 2026"]
+        Y24B["2024 report: re-based to 2022,<br/>minus 42 percent by 2030,<br/>minus 90 percent by 2050,<br/>submitted to SBTi"]
+        Y25A["Feb 2025: BEV moved to<br/>before 2030; 5 percent job cut"]
+        Y25B["Apr 2025: UK ZEV mandate eases<br/>rules for small-volume makers"]
+        Y24A --> Y24B --> Y25A --> Y25B
+    end
+
+    subgraph C["2025-2026: recedes"]
+        direction TB
+        Y25C["2025: SBTi validation withdrawn;<br/>Scope 3 up 32 percent vs 2022;<br/>women in leadership about 17 percent"]
+        Y26A["Feb 2026: up to 20 percent<br/>workforce cut"]
+        Y26B["Oct 2026: first BEV 2033 to 2035;<br/>V8 and V12 kept to 2035"]
+        END(["Current stated end-point:<br/>net zero by 2050"])
+        Y25C --> Y26A --> Y26B --> END
+    end
+
+    A --> B --> C
 
     classDef progress fill:#e3f2e1,stroke:#2e7d32,color:#000
     classDef weakened fill:#f8d7da,stroke:#b03a2e,color:#000

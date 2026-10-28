@@ -1,0 +1,64 @@
+flowchart LR
+    PREV(["From Figure 1a:<br/>painted body passed"])
+
+    subgraph FEED["Feeder streams"]
+        direction TB
+        T1["Trim shop: hides vetted,<br/>cut, hand-stitched"]
+        E1["Mercedes-AMG 4.0 V8<br/>from Germany"]
+        E2["5.2 V12, historically<br/>Ford Cologne, status<br/>unverified"]
+        T1 ~~~ E1 ~~~ E2
+    end
+
+    subgraph FINAL["3 - Trim and assembly"]
+        direction TB
+        F1["Painted body loaded<br/>on indexed line<br/>39-min takt, 2018"]
+        F2["Harness, E/E<br/>architecture and<br/>interior trim fitted"]
+        F3["Powertrain<br/>marriage"]
+        F4["Wheels, fluids,<br/>glazing, final fit<br/>(inferred detail)"]
+        F5{"All parts fitted,<br/>software complete?"}
+        F6["Car parked as WIP<br/>awaiting parts<br/>BOTTLENECK: supplier<br/>stall"]
+        F1 --> F2 --> F3 --> F4 --> F5
+        F5 -->|No| F6
+        F6 -->|Part arrives| F4
+    end
+
+    subgraph EOL["4 - End-of-line tests"]
+        direction TB
+        Q1["Settle run over<br/>speed bumps"]
+        Q2["Water-leak test"]
+        Q3{"Leak free?"}
+        Q4["Rectify seals<br/>(inferred)"]
+        Q5["Rolling-road test,<br/>no test track on site"]
+        Q6{"Dynamic test<br/>passed?"}
+        Q7["Rectification bay<br/>(inferred)"]
+        Q8["Final inspection by<br/>named inspector"]
+        Q9{"Inspector<br/>signs off?"}
+        Q1 --> Q2 --> Q3
+        Q3 -->|No| Q4
+        Q4 --> Q2
+        Q3 -->|Yes| Q5
+        Q5 --> Q6
+        Q6 -->|No| Q7
+        Q7 --> Q5
+        Q6 -->|Yes| Q8
+        Q8 --> Q9
+        Q9 -->|No| Q7
+    end
+
+    subgraph REL["5 - Release"]
+        direction TB
+        BADGE["Bonnet badge and<br/>Final Inspection By<br/>plaque fitted"]
+        DISP["Dispatch to outbound<br/>logistics (inferred)"]
+        PDI(["Dealer PDI and<br/>handover (inferred)"])
+        BADGE --> DISP --> PDI
+    end
+
+    PREV --> FINAL
+    FEED --> FINAL
+    FINAL -->|Complete| EOL
+    EOL -->|Signed off| REL
+
+    classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
+    classDef inferred fill:#fff8e1,stroke:#8d6e63,stroke-dasharray:5 5,color:#000
+    class B4,P7,F6 bottleneck
+    class START,SLOT,B6,B7,P9,Q4,Q7,DISP,PDI inferred

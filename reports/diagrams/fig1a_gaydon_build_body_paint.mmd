@@ -1,0 +1,56 @@
+flowchart LR
+    subgraph ORD["0 - Order and inbound"]
+        direction TB
+        START(["Order confirmed,<br/>spec frozen (inferred)"])
+        SLOT["Build slot and<br/>sequence issued (inferred)"]
+        INB["DHL Supply Chain:<br/>inbound transport,<br/>warehousing, line feed"]
+        START --> SLOT --> INB
+    end
+
+    subgraph BODY["1 - Body shop"]
+        direction TB
+        B1["Receive aluminium<br/>structures, extrusions,<br/>castings; store on racks"]
+        B2["Robot applies<br/>bonding adhesive"]
+        B3["Panels hand-placed<br/>in jig and riveted"]
+        B4["Heat cure of bonded<br/>structure<br/>BOTTLENECK: sets takt"]
+        B5["Closures hand-fitted:<br/>wings, doors, bonnet,<br/>boot lid"]
+        B6{"Body-in-white<br/>inspection passed?<br/>(inferred)"}
+        B7["Body rectification<br/>(inferred)"]
+        AMR["Race variant: chassis<br/>to Aston Martin Racing"]
+        B1 --> B2 --> B3 --> B4 --> B5 --> B6
+        B6 -->|No| B7
+        B7 --> B6
+        B6 -->|Race variant| AMR
+    end
+
+    subgraph PAINT["2 - Paint shop, up to 50 h"]
+        direction TB
+        P1["Clean and<br/>prepare shell"]
+        P2["Two primer coats,<br/>each hand-flatted"]
+        P3{"Standard or<br/>special / Q colour?"}
+        P4["Robot colour coat<br/>(forum evidence)"]
+        P5["Hand-sprayed colour<br/>(forum evidence)"]
+        P6["Clear coat<br/>and cure"]
+        P7["Hand flat, polish,<br/>re-buff<br/>BOTTLENECK: largest<br/>labour block"]
+        P8{"Paint inspection<br/>passed?"}
+        P9["Re-flat, re-polish<br/>or respray (inferred)"]
+        P1 --> P2 --> P3
+        P3 -->|Standard| P4
+        P3 -->|Special or Q| P5
+        P4 --> P6
+        P5 --> P6
+        P6 --> P7 --> P8
+        P8 -->|No| P9
+        P9 --> P8
+    end
+
+    NEXT(["Continues in Figure 1b:<br/>3 - Trim and final assembly"])
+
+    ORD --> BODY
+    BODY -->|Passed| PAINT
+    PAINT -->|Passed| NEXT
+
+    classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
+    classDef inferred fill:#fff8e1,stroke:#8d6e63,stroke-dasharray:5 5,color:#000
+    class B4,P7,F6 bottleneck
+    class START,SLOT,B6,B7,P9,Q4,Q7,DISP,PDI inferred

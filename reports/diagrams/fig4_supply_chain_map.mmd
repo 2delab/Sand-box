@@ -1,46 +1,45 @@
-flowchart LR
-    subgraph CAP["Capital providers that double as partners"]
-        K1["Yew Tree consortium,<br/>about 33 percent, 2025"]
-        K2["Saudi PIF,<br/>about 16.6 to 18 percent"]
-        K3["Geely,<br/>about 17 percent, 2023"]
+flowchart TB
+    subgraph TIER2["Tier 2 - materials"]
+        T21["Aluminium producers,<br/>incl. Swiss supplier<br/>hit by 2024 flood"]
+        T22["Semiconductor makers,<br/>2022 shortage"]
+        T23["Hides, textiles, other<br/>materials (inferred)"]
     end
 
-    subgraph UP["LEAN UPSTREAM - forecast and schedule driven, thin buffers"]
-        subgraph TIER2["Tier 2 - materials and components"]
-            T21["Aluminium producers, incl. a Swiss<br/>supplier hit by a 2024 flood"]
-            T22["Semiconductor makers,<br/>2022 shortage"]
-            T23["Hides, textiles and other<br/>materials (inferred)"]
-        end
-        subgraph TIER1["Tier 1 - strategic and specialist suppliers"]
-            M1["Mercedes-AMG and Mercedes-Benz:<br/>V8 engines and E/E architecture,<br/>equity partner, about 9 percent in 2023"]
-            V12["V12 engine: historically assembled at<br/>Ford Cologne, current status unverified"]
-            LU["Lucid: EV motors, batteries, Wunderbox,<br/>2023 deal, BEV now 2033 to 2035"]
-            BWL["Bridge of Weir leather"]
-            BWA["Bowers and Wilkins audio"]
-            SEAT["Seat suppliers incl. Recaro and Eissmann,<br/>reported insolvencies in 2024"]
-            OTH["Other suppliers: about 3,900<br/>imported line parts in 2019"]
-        end
-        DHL["DHL Supply Chain, principal logistics partner:<br/>inbound transport, warehousing, sequencing,<br/>kitting and line feed, contract to 2027"]
+    subgraph TIER1["Tier 1 - lean, thin buffers"]
+        M1["Mercedes-AMG / Benz:<br/>V8 engines, E/E<br/>architecture; about<br/>9 percent equity, 2023"]
+        V12["V12 engine: historically<br/>Ford Cologne, current<br/>status unverified"]
+        BWL["Bridge of Weir<br/>leather"]
+        BWA["Bowers and Wilkins<br/>audio"]
+        SEAT["Seat suppliers incl.<br/>Recaro, Eissmann:<br/>2024 insolvencies"]
+        OTH["Other suppliers:<br/>about 3,900 imported<br/>line parts, 2019"]
     end
 
-    subgraph SPEC["Specials partner network - project based"]
-        SP1["Valkyrie: Cosworth V12, Rimac battery,<br/>Multimatic tub, Ricardo transmission,<br/>Red Bull Advanced Technologies"]
-    end
+    DHL["DHL Supply Chain - principal logistics partner:<br/>inbound transport, warehousing, sequencing,<br/>kitting and line feed; contract to 2027"]
+
+    SP1["Specials network, project-based:<br/>Valkyrie - Cosworth V12, Rimac battery,<br/>Multimatic tub, Ricardo transmission,<br/>Red Bull Advanced Technologies"]
+    LU["Lucid: EV motors, batteries,<br/>Wunderbox; 2023 deal;<br/>BEV now 2033 to 2035"]
 
     CODP{{"CUSTOMER ORDER DECOUPLING POINT<br/>core models: build slot before body and paint<br/>Specials: before engineering and procurement"}}
 
-    subgraph DOWN["AGILE DOWNSTREAM - customer-order driven"]
-        G["Gaydon: sports cars, GTs and Specials"]
+    subgraph PLANTS["Plants - agile, order-driven"]
+        G["Gaydon: sports cars,<br/>GTs and Specials"]
         SA["St Athan: DBX"]
-        OUTL["Outbound logistics,<br/>provider not verified"]
-        QUOTA["US quota: 10 percent tariff on up to<br/>100,000 UK cars a year"]
-        DLR["About 156 franchised retailers<br/>in 53 markets"]
-        CUS(["Customers"])
     end
 
+    subgraph CAP["Capital partners"]
+        K1["Yew Tree consortium,<br/>about 33 percent, 2025"]
+        K2["Saudi PIF, about<br/>16.6 to 18 percent"]
+        K3["Geely, about<br/>17 percent, 2023"]
+    end
+
+    OUTL["Outbound logistics,<br/>provider not verified"]
+    QUOTA["US quota: 10 percent tariff on<br/>up to 100,000 UK cars a year"]
+    DLR["About 156 franchised retailers<br/>in 53 markets"]
+    CUS(["Customers"])
+
     subgraph AFTER["Aftersales"]
-        PO["Parts operations: about 80,000 SKUs,<br/>ToolsGroup safety-stock optimisation"]
-        NP["Aston Martin Works, Newport Pagnell:<br/>heritage parts and restoration"]
+        PO["Parts operations: about<br/>80,000 SKUs, ToolsGroup<br/>safety-stock optimisation"]
+        NP["Aston Martin Works,<br/>Newport Pagnell: heritage<br/>parts, restoration"]
     end
 
     T21 --> M1
@@ -60,18 +59,16 @@ flowchart LR
     LU -.->|dormant| CODP
     CODP --> G
     CODP --> SA
+    CAP -.->|equity| PLANTS
+    K2 -.->|shareholder link| LU
     G --> OUTL
     SA --> OUTL
     OUTL --> QUOTA
     QUOTA --> DLR
     OUTL --> DLR
     DLR --> CUS
-    PO --> DLR
     NP --> PO
-    K1 -.->|equity| G
-    K2 -.->|equity| G
-    K3 -.->|equity| G
-    K2 -.->|shareholder link| LU
+    PO --> DLR
 
     classDef codp fill:#fde2b8,stroke:#d35400,stroke-width:3px,color:#000
     classDef risk fill:#f8d7da,stroke:#b03a2e,color:#000

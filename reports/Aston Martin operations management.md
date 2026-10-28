@@ -98,40 +98,45 @@ Gaydon's choice of an **indexed line** rather than a jobbing workshop deserves c
 
 **Stage 4, end-of-line test and inspection.** Finished cars are driven over speed bumps "to settle everything in". A water-leak test follows, reportedly using 2,400 gallons per car ([6SpeedOnline, n.d.](https://www.6speedonline.com/forums/aston-martin/357785-aston-martin-factory-tour.html)), and then a **rolling-road test**, because there is no test track at Gaydon. The car then receives final sign-off by an inspector and the "almost ceremonial" fitting of the bonnet badge ([Trade Unique Cars, n.d.](https://tradeuniquecars.com.au/features/1710/aston-martin-factory-tour)). A plaque under the bonnet reads "Hand built in England – Final inspection by [name]" ([Aston-Martin.com, 2012](https://www.aston-martin.com/2012/07/25/meeting-the-maker-barry-griffin/)). This personal-accountability device acts as a behavioural quality control.
 
-**Figure 1. Gaydon vehicle build process: end-to-end flowchart with quality gates and rework loops.** Red nodes are bottlenecks; dashed amber nodes are inferred steps.
+**Figure 1a. Gaydon vehicle build process: order release, body shop and paint shop, with quality gates and rework loops.** Red nodes are bottlenecks; dashed amber nodes are inferred steps.
 
 ```mermaid
-flowchart TD
-    START(["Customer or dealer order confirmed,<br/>specification frozen (inferred)"]) --> SLOT["Build slot and sequence issued (inferred)"]
-    SLOT --> INB["DHL Supply Chain: inbound transport,<br/>warehousing and in-plant logistics"]
-    INB --> B1
+flowchart LR
+    subgraph ORD["0 - Order and inbound"]
+        direction TB
+        START(["Order confirmed,<br/>spec frozen (inferred)"])
+        SLOT["Build slot and<br/>sequence issued (inferred)"]
+        INB["DHL Supply Chain:<br/>inbound transport,<br/>warehousing, line feed"]
+        START --> SLOT --> INB
+    end
 
-    subgraph BODY["Stage 1 - Body shop"]
-        B1["Receive aluminium structures, extrusions and castings<br/>tubs historically from a subcontractor, stored on racks"]
-        B2["Robot applies bonding adhesive"]
-        B3["Panels hand-placed in jig and riveted"]
-        B4["Heat cure of bonded structure<br/>BOTTLENECK: sets body-shop takt"]
-        B5["Closures hand-fitted:<br/>wings, doors, bonnet, boot lid"]
-        B6{"Body-in-white inspection<br/>passed? (inferred)"}
-        B7["Body rectification (inferred)"]
+    subgraph BODY["1 - Body shop"]
+        direction TB
+        B1["Receive aluminium<br/>structures, extrusions,<br/>castings; store on racks"]
+        B2["Robot applies<br/>bonding adhesive"]
+        B3["Panels hand-placed<br/>in jig and riveted"]
+        B4["Heat cure of bonded<br/>structure<br/>BOTTLENECK: sets takt"]
+        B5["Closures hand-fitted:<br/>wings, doors, bonnet,<br/>boot lid"]
+        B6{"Body-in-white<br/>inspection passed?<br/>(inferred)"}
+        B7["Body rectification<br/>(inferred)"]
+        AMR["Race variant: chassis<br/>to Aston Martin Racing"]
         B1 --> B2 --> B3 --> B4 --> B5 --> B6
         B6 -->|No| B7
         B7 --> B6
+        B6 -->|Race variant| AMR
     end
 
-    B6 -->|Race variant| AMR["Chassis released to<br/>Aston Martin Racing"]
-    B6 -->|Yes| P1
-
-    subgraph PAINT["Stage 2 - Paint shop, up to 50 h per car"]
-        P1["Clean and prepare shell"]
+    subgraph PAINT["2 - Paint shop, up to 50 h"]
+        direction TB
+        P1["Clean and<br/>prepare shell"]
         P2["Two primer coats,<br/>each hand-flatted"]
-        P3{"Standard colour or<br/>special or Q colour?"}
-        P4["Robot-sprayed colour coat<br/>(forum evidence)"]
-        P5["Hand-sprayed colour coat<br/>(forum evidence)"]
-        P6["Clear coat and cure"]
-        P7["Hand flat, polish back and re-buff<br/>BOTTLENECK: largest labour block"]
+        P3{"Standard or<br/>special / Q colour?"}
+        P4["Robot colour coat<br/>(forum evidence)"]
+        P5["Hand-sprayed colour<br/>(forum evidence)"]
+        P6["Clear coat<br/>and cure"]
+        P7["Hand flat, polish,<br/>re-buff<br/>BOTTLENECK: largest<br/>labour block"]
         P8{"Paint inspection<br/>passed?"}
-        P9["Paint rectification: re-flat,<br/>re-polish or respray (inferred)"]
+        P9["Re-flat, re-polish<br/>or respray (inferred)"]
         P1 --> P2 --> P3
         P3 -->|Standard| P4
         P3 -->|Special or Q| P5
@@ -142,40 +147,54 @@ flowchart TD
         P9 --> P8
     end
 
+    NEXT(["Continues in Figure 1b:<br/>3 - Trim and final assembly"])
+
+    ORD --> BODY
+    BODY -->|Passed| PAINT
+    PAINT -->|Passed| NEXT
+
+    classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
+    classDef inferred fill:#fff8e1,stroke:#8d6e63,stroke-dasharray:5 5,color:#000
+    class B4,P7,F6 bottleneck
+    class START,SLOT,B6,B7,P9,Q4,Q7,DISP,PDI inferred
+```
+
+**Figure 1b. Gaydon vehicle build process (continued): trim and final assembly, end-of-line tests and release.**
+
+```mermaid
+flowchart LR
+    PREV(["From Figure 1a:<br/>painted body passed"])
+
     subgraph FEED["Feeder streams"]
-        T1["Trim shop: hides vetted, cut and<br/>hand-stitched into seats and panels"]
-        E1["Mercedes-AMG 4.0 V8<br/>shipped from Germany"]
-        E2["5.2 V12, historically assembled at<br/>Ford Cologne, status unverified"]
+        direction TB
+        T1["Trim shop: hides vetted,<br/>cut, hand-stitched"]
+        E1["Mercedes-AMG 4.0 V8<br/>from Germany"]
+        E2["5.2 V12, historically<br/>Ford Cologne, status<br/>unverified"]
+        T1 ~~~ E1 ~~~ E2
     end
 
-    P8 -->|Yes| F1
-
-    subgraph FINAL["Stage 3 - Trim and final assembly, indexed stations, 39-min takt in 2018"]
-        F1["Painted body loaded at start of indexed line"]
-        F2["Harness, electrical architecture<br/>and interior trim fitted"]
-        F3["Powertrain marriage"]
-        F4["Wheels, fluids, glazing and<br/>final fit (inferred detail)"]
-        F5{"All parts fitted and<br/>software complete?"}
-        F6["Car parked off-line as WIP awaiting<br/>parts or software (inferred location)<br/>BOTTLENECK: supplier-driven stall"]
+    subgraph FINAL["3 - Trim and assembly"]
+        direction TB
+        F1["Painted body loaded<br/>on indexed line<br/>39-min takt, 2018"]
+        F2["Harness, E/E<br/>architecture and<br/>interior trim fitted"]
+        F3["Powertrain<br/>marriage"]
+        F4["Wheels, fluids,<br/>glazing, final fit<br/>(inferred detail)"]
+        F5{"All parts fitted,<br/>software complete?"}
+        F6["Car parked as WIP<br/>awaiting parts<br/>BOTTLENECK: supplier<br/>stall"]
         F1 --> F2 --> F3 --> F4 --> F5
         F5 -->|No| F6
-        F6 -->|Part or fix arrives| F4
+        F6 -->|Part arrives| F4
     end
 
-    T1 --> F2
-    E1 --> F3
-    E2 --> F3
-
-    F5 -->|Yes| Q1
-
-    subgraph EOL["Stage 4 - End-of-line test and inspection"]
-        Q1["Settle run over speed bumps"]
+    subgraph EOL["4 - End-of-line tests"]
+        direction TB
+        Q1["Settle run over<br/>speed bumps"]
         Q2["Water-leak test"]
         Q3{"Leak free?"}
-        Q4["Rectify seals (inferred)"]
+        Q4["Rectify seals<br/>(inferred)"]
         Q5["Rolling-road test,<br/>no test track on site"]
         Q6{"Dynamic test<br/>passed?"}
-        Q7["Rectification bay (inferred)"]
+        Q7["Rectification bay<br/>(inferred)"]
         Q8["Final inspection by<br/>named inspector"]
         Q9{"Inspector<br/>signs off?"}
         Q1 --> Q2 --> Q3
@@ -190,9 +209,18 @@ flowchart TD
         Q9 -->|No| Q7
     end
 
-    Q9 -->|Yes| BADGE["Bonnet badge and<br/>Final Inspection By plaque fitted"]
-    BADGE --> DISP["Dispatch to outbound logistics (inferred)"]
-    DISP --> PDI(["Dealer PDI and customer handover (inferred)"])
+    subgraph REL["5 - Release"]
+        direction TB
+        BADGE["Bonnet badge and<br/>Final Inspection By<br/>plaque fitted"]
+        DISP["Dispatch to outbound<br/>logistics (inferred)"]
+        PDI(["Dealer PDI and<br/>handover (inferred)"])
+        BADGE --> DISP --> PDI
+    end
+
+    PREV --> FINAL
+    FEED --> FINAL
+    FINAL -->|Complete| EOL
+    EOL -->|Signed off| REL
 
     classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
     classDef inferred fill:#fff8e1,stroke:#8d6e63,stroke-dasharray:5 5,color:#000
@@ -209,48 +237,52 @@ The timeline also needs reconciling, because the notes appear to conflict. Manuf
 **Figure 2. St Athan DBX process flow across the three super-hangars, with takt times and the curing bottleneck.**
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph INBD["Inbound - DHL Supply Chain"]
-        I1["Collection from UK, European<br/>and global suppliers"]
-        I2["Sequencing, kitting,<br/>decanting and reworking"]
+        direction LR
+        I1["Collection from UK,<br/>European and<br/>global suppliers"]
+        I2["Sequencing, kitting,<br/>decanting and<br/>reworking"]
         I1 --> I2
     end
 
-    subgraph HG1["Super-hangar 1 - Body-in-white<br/>takt 39 to 40 min, two shift patterns"]
-        S1["Underframe or tub line"]
-        S2["Body-in-white line"]
-        S3["Oven cure of bonded aluminium<br/>three separate ovens<br/>BOTTLENECK: slowest step"]
-        S4["Body finishing line"]
+    subgraph HG1["Hangar 1 - Body: takt 39-40 min"]
+        direction LR
+        S1["Underframe or tub line<br/>two shift patterns"]
+        S2["Body-in-white<br/>line"]
+        S3["Oven cure of bonded<br/>aluminium, three ovens<br/>BOTTLENECK"]
+        S4["Body finishing<br/>line"]
         S1 --> S2 --> S3 --> S4
     end
 
-    BUF[("Buffer of cured bodies<br/>between shifts (inferred)")]
+    subgraph BUFG["Decoupling buffer"]
+        direction LR
+        BUF[("Cured bodies held<br/>between shifts<br/>(inferred)")]
+        N2["Balance check (inferred):<br/>2 shifts x 450 / 40 = 22.5 bodies a day<br/>1 shift x 450 / 20 = 22.5 cars a day"]
+        BUF -.- N2
+    end
 
-    subgraph HG2["Super-hangar 2 - Paint shop, three storeys<br/>takt 20 min"]
-        S5["Ground floor: manual cleaning,<br/>two assisting robots"]
-        S6["Upper floor: three Motoman robots<br/>apply primer, base and clear coat"]
-        S7["Manual final polish,<br/>optional mirror finish"]
+    subgraph HG2["Hangar 2 - Paint: takt 20 min"]
+        direction LR
+        S5["Three-storey paint shop<br/>Ground floor: manual<br/>cleaning, two<br/>assisting robots"]
+        S6["Upper floor: three<br/>Motoman robots: primer,<br/>base, clear coat"]
+        S7["Manual final polish,<br/>optional mirror<br/>finish"]
         S5 --> S6 --> S7
     end
 
-    subgraph HG3["Super-hangar 3 - Final assembly<br/>takt 20 min"]
-        S8["Trim and assembly stations"]
+    subgraph HG3["Hangar 3 - Assembly: takt 20 min"]
+        direction LR
+        S8["Trim and<br/>assembly stations"]
         S9["Powertrain marriage:<br/>Mercedes-AMG V8"]
-        S10["End-of-line tests and inspection<br/>(inferred, assumed similar to Gaydon)"]
-        S8 --> S9 --> S10
+        S10["End-of-line tests,<br/>inspection (inferred,<br/>as Gaydon)"]
+        OUT(["Dispatch: about<br/>80 percent exported"])
+        S8 --> S9 --> S10 --> OUT
     end
 
-    I2 --> S1
-    I2 --> S8
-    S4 --> BUF
-    BUF --> S5
-    S7 --> S8
-    S10 --> OUT(["Dispatch: about 80 percent<br/>of output exported"])
+    N1["Throughput: about 85 h<br/>per DBX if nothing stops"]
 
-    N1["Throughput: about 85 h per DBX<br/>if nothing stops"]
-    N2["Balance check (inferred):<br/>2 shifts x 450 min / 40 min = 22.5 bodies per day<br/>1 shift x 450 min / 20 min = 22.5 cars per day"]
-    N1 -.- S8
-    N2 -.- BUF
+    INBD --> HG1 --> BUFG --> HG2 --> HG3
+    INBD -.->|line-side parts| HG3
+    HG3 -.- N1
 
     classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
     classDef inferred fill:#fff8e1,stroke:#8d6e63,stroke-dasharray:5 5,color:#000
@@ -311,76 +343,73 @@ The **external failure mode is supplier-driven WIP stalls**. It is now the domin
 
 Customisation is designed to enter **before** the build. "The Q Collection offers a range of exclusive off-the-shelf options that are available at the point of ordering a car and **don't require an additional build lead time**". Commission projects, by contrast, "are often complex to create and are accordingly **agreed prior to production**". They can begin at a dealership, at Gaydon or at the Mayfair brand centre ([Aston Martin Magazine, n.d.a](https://magazine.astonmartin.com/design/special-request-q-aston-martins-tailor-made-enhancements)). A US dealer estimates that simple personalisation "might add a few weeks" while extensive bespoke work "can require several months" ([Galpin Aston Martin, n.d.](https://www.galpinastonmartin.com/q-by-aston-martin-customization-guide-los-angeles/)). An older company-owned page claims that up to a quarter of cars feature some element of Q, against about 10% in an older article. Both figures are undated and should be treated with caution ([AstonMartins.com, n.d.b](https://astonmartins.com/car/db11-q-by-aston-martin/); [Top Gear Philippines, 2012](https://www.topgear.com.ph/news/geneva-2012-aston-martin-launches-customization-service)). Downstream, the core order book stood at about **five months** in Q3 2026 ([AML, 2026g](https://uk.advfn.com/stock-market/london/aston-martin-lagonda-glo-AML/share-news/Aston-Martin-Lagonda-Glob-Hldgs-PLC-Results-for-Q3/99571793)). Since mid-2025, US-bound cars have also had to be allocated against a quarterly **quota of 100,000 UK cars a year at a 10% tariff**, which management says complicates planning ([Shepherd and Wedderburn, 2025](https://shepwedd.com/knowledge/new-uk-us-tariff-deal-what-expect/); [Yahoo Finance, 2026a](https://finance.yahoo.com/news/aston-martin-lagonda-global-q4-133820780.html)). For Specials the process is fully order-driven. Valhalla customer specifications are finalised and scheduled into production, and deposits are taken in advance ([AML, 2025g](https://www.astonmartin.com/-/media/corporate/documents/h1-results-2025/aston-martin-lagonda-h1-2025-results-transcript.pdf?rev=d076b37827e247e6bd8b7052db770ffd)).
 
-**Figure 3. Cross-functional (swimlane-style) flowchart of the order-to-delivery process.** Each subgraph is a lane. Numbered steps give the sequence.
+**Figure 3. Cross-functional flowchart of the order-to-delivery process.** Each step is prefixed and colour-coded by the party responsible (customer, dealer, AML sales and Q, production planning, suppliers and DHL, plant, outbound logistics). Numbered steps give the sequence; the red node is the supplier-driven stall.
 
 ```mermaid
-flowchart TD
-    subgraph LN1["Lane 1 - Customer"]
-        C1(["1 Configures car online or with dealer"])
-        C2(["12 Takes delivery, factory tour<br/>can be arranged via dealer"])
+flowchart LR
+    subgraph OC["A - Order capture"]
+        direction TB
+        C1(["1 CUSTOMER: configures car<br/>online or with dealer"]):::cust
+        D1["2 DEALER: consultation, order<br/>and deposit (inferred)<br/>about 156 retailers, 53 markets"]:::dealer
+        D2{"DEALER: personalisation<br/>beyond catalogue?"}:::dealer
+        A1["3a AML: Q Collection option<br/>chosen at order, no added<br/>build lead time"]:::aml
+        A2["3b AML: Q Commission<br/>consultation at dealer,<br/>Gaydon or Mayfair"]:::aml
+        A3{"AML: bespoke design<br/>and engineering agreed?"}:::aml
+        A4["4 AML: specification frozen<br/>before production"]:::aml
+        A5["5 AML: order enters order bank<br/>core book about 5 months, Q3 2026"]:::aml
+        A6{"AML: US-bound car?"}:::aml
+        A7["AML: allocate within quarterly<br/>US quota, 10 percent tariff<br/>up to 100,000 UK cars a year"]:::aml
+        REL1(["Order released to planning"]):::aml
+        C1 --> D1 --> D2
+        D2 -->|No: standard or Q Collection| A1
+        D2 -->|Yes: Q Commission| A2
+        A2 --> A3
+        A3 -->|Not yet| A2
+        A3 -->|Yes: adds weeks to months| A4
+        A1 --> A4
+        A4 --> A5 --> A6
+        A6 -->|Yes| A7
+        A6 -->|No| REL1
+        A7 --> REL1
     end
 
-    subgraph LN2["Lane 2 - Dealer, about 156 retailers in 53 markets"]
-        D1["2 Sales consultation, order<br/>and deposit (inferred)"]
-        D2{"Personalisation beyond<br/>catalogue options?"}
-        D3["11 Pre-delivery inspection<br/>and handover (inferred)"]
+    subgraph PS["B - Planning and supply"]
+        direction TB
+        PP1["6 PLANNING: build slot and<br/>sequence allocated (inferred)"]:::plan
+        PP2["7 PLANNING: bill of materials<br/>exploded, supplier call-offs<br/>issued (inferred)"]:::plan
+        SU1["8 SUPPLIERS: Mercedes-AMG<br/>powertrain and E/E, leather,<br/>audio, seats, others ship"]:::supp
+        SU2["DHL: collects, warehouses,<br/>sequences and kits parts"]:::supp
+        PP1 --> PP2 --> SU1 --> SU2
     end
 
-    subgraph LN3["Lane 3 - Aston Martin sales and Q by Aston Martin"]
-        A1["3a Q Collection option chosen at order,<br/>no added build lead time"]
-        A2["3b Q Commission consultation at<br/>dealer, Gaydon or Mayfair"]
-        A3{"Bespoke design and<br/>engineering agreed?"}
-        A4["4 Specification frozen,<br/>agreed prior to production"]
-        A5["5 Order enters order bank,<br/>core order book about 5 months in Q3 2026"]
-        A6{"US-bound car?"}
-        A7["Allocate within quarterly US quota,<br/>10 percent tariff up to 100,000 UK cars a year"]
+    subgraph BD["C - Build and delivery"]
+        direction TB
+        PL1["9 PLANT: body, paint, trim<br/>and assembly, Gaydon<br/>or St Athan"]:::plant
+        PL2{"PLANT: all parts<br/>fitted?"}:::plant
+        PL3["PLANT: car held as WIP<br/>awaiting parts, e.g. 350<br/>DBX707s, June 2022"]:::stall
+        SU3["SUPPLIERS: late parts<br/>expedited (inferred)"]:::supp
+        PL4["PLANT: end-of-line tests and<br/>named final inspection"]:::plant
+        LO1["10 LOGISTICS: shipped to market,<br/>carrier and mode not verified"]:::log
+        D3["11 DEALER: pre-delivery<br/>inspection, handover (inferred)"]:::dealer
+        C2(["12 CUSTOMER: takes delivery"]):::cust
+        PL1 --> PL2
+        PL2 -->|No| PL3
+        PL3 --> SU3
+        SU3 -->|Part delivered| PL1
+        PL2 -->|Yes| PL4
+        PL4 --> LO1 --> D3 --> C2
     end
 
-    subgraph LN4["Lane 4 - Production planning"]
-        PP1["6 Build slot and sequence allocated (inferred)"]
-        PP2["7 Bill of materials exploded and<br/>supplier call-offs issued (inferred)"]
-    end
+    OC --> PS --> BD
 
-    subgraph LN5["Lane 5 - Suppliers and DHL Supply Chain"]
-        SU1["8 Tier-1 suppliers ship: Mercedes-AMG powertrain<br/>and E/E architecture, leather, audio, seats, others"]
-        SU2["DHL collects, warehouses,<br/>sequences and kits parts"]
-        SU3["Late parts expedited (inferred)"]
-    end
-
-    subgraph LN6["Lane 6 - Plant: Gaydon or St Athan"]
-        PL1["9 Body, paint, trim and assembly"]
-        PL2{"All parts fitted?"}
-        PL3["Car held as WIP awaiting parts,<br/>e.g. 350 DBX707s in June 2022"]
-        PL4["End-of-line tests and<br/>named final inspection"]
-    end
-
-    subgraph LN7["Lane 7 - Outbound logistics"]
-        LO1["10 Vehicle shipped to market,<br/>carrier and mode not verified"]
-    end
-
-    C1 --> D1 --> D2
-    D2 -->|No: standard or Q Collection| A1
-    D2 -->|Yes: Q Commission| A2
-    A1 --> A4
-    A2 --> A3
-    A3 -->|Not yet| A2
-    A3 -->|Yes, adds weeks to months| A4
-    A4 --> A5 --> A6
-    A6 -->|Yes| A7
-    A6 -->|No| PP1
-    A7 --> PP1
-    PP1 --> PP2 --> SU1 --> SU2 --> PL1
-    PL1 --> PL2
-    PL2 -->|No| PL3
-    PL3 --> SU3
-    SU3 -->|Part delivered| PL1
-    PL2 -->|Yes| PL4
-    PL4 --> LO1 --> D3 --> C2
-
-    classDef inferred fill:#fff8e1,stroke:#8d6e63,stroke-dasharray:5 5,color:#000
-    classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
-    class D1,D3,PP1,PP2,SU3 inferred
-    class PL3 bottleneck
+    classDef cust fill:#e8eaf6,stroke:#3949ab,color:#000
+    classDef dealer fill:#e0f2f1,stroke:#00796b,color:#000
+    classDef aml fill:#e3f2fd,stroke:#1565c0,color:#000
+    classDef plan fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    classDef supp fill:#fff3e0,stroke:#e65100,color:#000
+    classDef plant fill:#f1f8e9,stroke:#558b2f,color:#000
+    classDef log fill:#eceff1,stroke:#455a64,color:#000
+    classDef stall fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
 ```
 
 The process design is sound in principle. Variety is **front-loaded** into a specification freeze, so the line receives a fixed bill of materials and the long Q Commission engineering loop runs offline. Its weakness is that the freeze commits the factory to a specific car before the material for that car is guaranteed. The 2022 and 2024 episodes show what happens next: cars are started, then stranded.
@@ -430,49 +459,48 @@ The research notes appear to conflict on inbound logistics, and the sourced find
 **Figure 4. Supply chain structure map showing the customer order decoupling point (CODP) for the leagile analysis.**
 
 ```mermaid
-flowchart LR
-    subgraph CAP["Capital providers that double as partners"]
-        K1["Yew Tree consortium,<br/>about 33 percent, 2025"]
-        K2["Saudi PIF,<br/>about 16.6 to 18 percent"]
-        K3["Geely,<br/>about 17 percent, 2023"]
+flowchart TB
+    subgraph TIER2["Tier 2 - materials"]
+        T21["Aluminium producers,<br/>incl. Swiss supplier<br/>hit by 2024 flood"]
+        T22["Semiconductor makers,<br/>2022 shortage"]
+        T23["Hides, textiles, other<br/>materials (inferred)"]
     end
 
-    subgraph UP["LEAN UPSTREAM - forecast and schedule driven, thin buffers"]
-        subgraph TIER2["Tier 2 - materials and components"]
-            T21["Aluminium producers, incl. a Swiss<br/>supplier hit by a 2024 flood"]
-            T22["Semiconductor makers,<br/>2022 shortage"]
-            T23["Hides, textiles and other<br/>materials (inferred)"]
-        end
-        subgraph TIER1["Tier 1 - strategic and specialist suppliers"]
-            M1["Mercedes-AMG and Mercedes-Benz:<br/>V8 engines and E/E architecture,<br/>equity partner, about 9 percent in 2023"]
-            V12["V12 engine: historically assembled at<br/>Ford Cologne, current status unverified"]
-            LU["Lucid: EV motors, batteries, Wunderbox,<br/>2023 deal, BEV now 2033 to 2035"]
-            BWL["Bridge of Weir leather"]
-            BWA["Bowers and Wilkins audio"]
-            SEAT["Seat suppliers incl. Recaro and Eissmann,<br/>reported insolvencies in 2024"]
-            OTH["Other suppliers: about 3,900<br/>imported line parts in 2019"]
-        end
-        DHL["DHL Supply Chain, principal logistics partner:<br/>inbound transport, warehousing, sequencing,<br/>kitting and line feed, contract to 2027"]
+    subgraph TIER1["Tier 1 - lean, thin buffers"]
+        M1["Mercedes-AMG / Benz:<br/>V8 engines, E/E<br/>architecture; about<br/>9 percent equity, 2023"]
+        V12["V12 engine: historically<br/>Ford Cologne, current<br/>status unverified"]
+        BWL["Bridge of Weir<br/>leather"]
+        BWA["Bowers and Wilkins<br/>audio"]
+        SEAT["Seat suppliers incl.<br/>Recaro, Eissmann:<br/>2024 insolvencies"]
+        OTH["Other suppliers:<br/>about 3,900 imported<br/>line parts, 2019"]
     end
 
-    subgraph SPEC["Specials partner network - project based"]
-        SP1["Valkyrie: Cosworth V12, Rimac battery,<br/>Multimatic tub, Ricardo transmission,<br/>Red Bull Advanced Technologies"]
-    end
+    DHL["DHL Supply Chain - principal logistics partner:<br/>inbound transport, warehousing, sequencing,<br/>kitting and line feed; contract to 2027"]
+
+    SP1["Specials network, project-based:<br/>Valkyrie - Cosworth V12, Rimac battery,<br/>Multimatic tub, Ricardo transmission,<br/>Red Bull Advanced Technologies"]
+    LU["Lucid: EV motors, batteries,<br/>Wunderbox; 2023 deal;<br/>BEV now 2033 to 2035"]
 
     CODP{{"CUSTOMER ORDER DECOUPLING POINT<br/>core models: build slot before body and paint<br/>Specials: before engineering and procurement"}}
 
-    subgraph DOWN["AGILE DOWNSTREAM - customer-order driven"]
-        G["Gaydon: sports cars, GTs and Specials"]
+    subgraph PLANTS["Plants - agile, order-driven"]
+        G["Gaydon: sports cars,<br/>GTs and Specials"]
         SA["St Athan: DBX"]
-        OUTL["Outbound logistics,<br/>provider not verified"]
-        QUOTA["US quota: 10 percent tariff on up to<br/>100,000 UK cars a year"]
-        DLR["About 156 franchised retailers<br/>in 53 markets"]
-        CUS(["Customers"])
     end
 
+    subgraph CAP["Capital partners"]
+        K1["Yew Tree consortium,<br/>about 33 percent, 2025"]
+        K2["Saudi PIF, about<br/>16.6 to 18 percent"]
+        K3["Geely, about<br/>17 percent, 2023"]
+    end
+
+    OUTL["Outbound logistics,<br/>provider not verified"]
+    QUOTA["US quota: 10 percent tariff on<br/>up to 100,000 UK cars a year"]
+    DLR["About 156 franchised retailers<br/>in 53 markets"]
+    CUS(["Customers"])
+
     subgraph AFTER["Aftersales"]
-        PO["Parts operations: about 80,000 SKUs,<br/>ToolsGroup safety-stock optimisation"]
-        NP["Aston Martin Works, Newport Pagnell:<br/>heritage parts and restoration"]
+        PO["Parts operations: about<br/>80,000 SKUs, ToolsGroup<br/>safety-stock optimisation"]
+        NP["Aston Martin Works,<br/>Newport Pagnell: heritage<br/>parts, restoration"]
     end
 
     T21 --> M1
@@ -492,18 +520,16 @@ flowchart LR
     LU -.->|dormant| CODP
     CODP --> G
     CODP --> SA
+    CAP -.->|equity| PLANTS
+    K2 -.->|shareholder link| LU
     G --> OUTL
     SA --> OUTL
     OUTL --> QUOTA
     QUOTA --> DLR
     OUTL --> DLR
     DLR --> CUS
-    PO --> DLR
     NP --> PO
-    K1 -.->|equity| G
-    K2 -.->|equity| G
-    K3 -.->|equity| G
-    K2 -.->|shareholder link| LU
+    PO --> DLR
 
     classDef codp fill:#fde2b8,stroke:#d35400,stroke-width:3px,color:#000
     classDef risk fill:#f8d7da,stroke:#b03a2e,color:#000
@@ -583,17 +609,28 @@ The textbook relationships give a sense of scale. For an independent-demand cons
 **Figure 5. Inventory flow, from supplier to customer, with the 2023 balance-sheet values and the stall loop.**
 
 ```mermaid
-flowchart LR
-    SUP["Suppliers via DHL inbound,<br/>about 3 days line-side cover in 2019"] --> PS["Production stock: raw materials<br/>and bought-in components<br/>within the 157.7m GBP line, 2023"]
-    SUP --> SP["Parts for resale and service parts<br/>within the 157.7m GBP line, 2023<br/>about 80,000 SKUs, ToolsGroup"]
-    PS --> WIP["Work in progress<br/>33.2m GBP in 2023, 48.5m GBP in 2022"]
-    WIP -->|Missing part| HOLD["Stalled WIP awaiting parts,<br/>e.g. 350 DBX707s in June 2022"]
+flowchart TB
+    SUP["Suppliers via DHL inbound<br/>about 3 days line-side cover, 2019"]
+    PS["Production stock: raw materials<br/>and bought-in components<br/>within the 157.7m GBP line, 2023"]
+    SP["Parts for resale and service parts<br/>within the 157.7m GBP line, 2023<br/>about 80,000 SKUs, ToolsGroup"]
+    WIP["Work in progress<br/>33.2m GBP 2023, 48.5m GBP 2022"]
+    HOLD["Stalled WIP awaiting parts<br/>e.g. 350 DBX707s, June 2022"]
+    FV["Finished vehicles 81.8m GBP, 2023<br/>incl. 49.0m GBP company service cars"]
+    DS["Dealer stock, off balance sheet:<br/>destock 190 units 2019, 1,580 units 2020,<br/>second destock 2025 to 2026"]
+    NPW["Aston Martin Works<br/>heritage parts"]
+    DLRS["Dealer workshops<br/>and aftersales"]
+    CUST(["Customer"])
+
+    SUP --> PS
+    SUP --> SP
+    PS --> WIP
+    WIP -->|Missing part| HOLD
     HOLD -->|Part arrives| WIP
-    WIP --> FV["Finished vehicles 81.8m GBP in 2023,<br/>incl. 49.0m GBP company service cars"]
-    FV -->|Wholesale, revenue recognised| DS["Dealer stock, off balance sheet:<br/>destock 190 units 2019, 1,580 units 2020,<br/>second destock 2025 to 2026"]
-    DS -->|Retail sale| CUST(["Customer"])
-    SP --> DLRS["Dealer workshops and aftersales"]
-    SP --> NPW["Aston Martin Works heritage parts"]
+    WIP --> FV
+    FV -->|Wholesale, revenue recognised| DS
+    DS -->|Retail sale| CUST
+    SP --> DLRS
+    SP --> NPW
     NPW --> DLRS
     DLRS --> CUST
     CUST -.->|Specials deposits pre-fund build| WIP
@@ -620,17 +657,34 @@ The research notes contain one date conflict, and the primary source settles it.
 
 ```mermaid
 flowchart LR
-    Y19["2019: 100 percent renewable electricity<br/>at UK manufacturing sites"] --> Y22["22 Apr 2022: Racing. Green. launched:<br/>net-zero manufacturing by 2030,<br/>supply chain minus 30 percent by 2030,<br/>value-chain net zero by 2039, first BEV 2025"]
-    Y22 --> Y23A["Apr 2023: carbon neutral manufacturing<br/>claimed at Gaydon and St Athan"]
-    Y23A --> Y23B["Jun 2023: Lucid EV technology deal"]
-    Y23B --> Y24A["Feb 2024: first BEV delayed to 2026"]
-    Y24A --> Y24B["2024 report: targets re-based to 2022,<br/>minus 42 percent by 2030, minus 90 percent by 2050,<br/>submitted to SBTi"]
-    Y24B --> Y25A["Feb 2025: BEV moved to before 2030,<br/>5 percent job cut"]
-    Y25A --> Y25B["Apr 2025: UK ZEV mandate eases<br/>rules for small-volume makers"]
-    Y25B --> Y25C["2025: SBTi validation withdrawn,<br/>Scope 3 up 32 percent vs 2022,<br/>women in leadership about 17 percent"]
-    Y25C --> Y26A["Feb 2026: up to 20 percent workforce cut"]
-    Y26A --> Y26B["Oct 2026: first BEV 2033 to 2035,<br/>V8 and V12 kept to 2035"]
-    Y26B --> END(["Current stated end-point:<br/>net zero by 2050"])
+    subgraph A["2019-2023: ambition set"]
+        direction TB
+        Y19["2019: 100 percent renewable<br/>electricity at UK manufacturing sites"]
+        Y22["22 Apr 2022: Racing. Green. launched:<br/>net-zero manufacturing by 2030,<br/>supply chain minus 30 percent by 2030,<br/>value-chain net zero by 2039,<br/>first BEV 2025"]
+        Y23A["Apr 2023: carbon neutral manufacturing<br/>claimed at Gaydon and St Athan"]
+        Y23B["Jun 2023: Lucid EV technology deal"]
+        Y19 --> Y22 --> Y23A --> Y23B
+    end
+
+    subgraph B["2024-2025: re-based"]
+        direction TB
+        Y24A["Feb 2024: first BEV delayed to 2026"]
+        Y24B["2024 report: re-based to 2022,<br/>minus 42 percent by 2030,<br/>minus 90 percent by 2050,<br/>submitted to SBTi"]
+        Y25A["Feb 2025: BEV moved to<br/>before 2030; 5 percent job cut"]
+        Y25B["Apr 2025: UK ZEV mandate eases<br/>rules for small-volume makers"]
+        Y24A --> Y24B --> Y25A --> Y25B
+    end
+
+    subgraph C["2025-2026: recedes"]
+        direction TB
+        Y25C["2025: SBTi validation withdrawn;<br/>Scope 3 up 32 percent vs 2022;<br/>women in leadership about 17 percent"]
+        Y26A["Feb 2026: up to 20 percent<br/>workforce cut"]
+        Y26B["Oct 2026: first BEV 2033 to 2035;<br/>V8 and V12 kept to 2035"]
+        END(["Current stated end-point:<br/>net zero by 2050"])
+        Y25C --> Y26A --> Y26B --> END
+    end
+
+    A --> B --> C
 
     classDef progress fill:#e3f2e1,stroke:#2e7d32,color:#000
     classDef weakened fill:#f8d7da,stroke:#b03a2e,color:#000

@@ -1,67 +1,64 @@
-flowchart TD
-    subgraph LN1["Lane 1 - Customer"]
-        C1(["1 Configures car online or with dealer"])
-        C2(["12 Takes delivery, factory tour<br/>can be arranged via dealer"])
+flowchart LR
+    subgraph OC["A - Order capture"]
+        direction TB
+        C1(["1 CUSTOMER: configures car<br/>online or with dealer"]):::cust
+        D1["2 DEALER: consultation, order<br/>and deposit (inferred)<br/>about 156 retailers, 53 markets"]:::dealer
+        D2{"DEALER: personalisation<br/>beyond catalogue?"}:::dealer
+        A1["3a AML: Q Collection option<br/>chosen at order, no added<br/>build lead time"]:::aml
+        A2["3b AML: Q Commission<br/>consultation at dealer,<br/>Gaydon or Mayfair"]:::aml
+        A3{"AML: bespoke design<br/>and engineering agreed?"}:::aml
+        A4["4 AML: specification frozen<br/>before production"]:::aml
+        A5["5 AML: order enters order bank<br/>core book about 5 months, Q3 2026"]:::aml
+        A6{"AML: US-bound car?"}:::aml
+        A7["AML: allocate within quarterly<br/>US quota, 10 percent tariff<br/>up to 100,000 UK cars a year"]:::aml
+        REL1(["Order released to planning"]):::aml
+        C1 --> D1 --> D2
+        D2 -->|No: standard or Q Collection| A1
+        D2 -->|Yes: Q Commission| A2
+        A2 --> A3
+        A3 -->|Not yet| A2
+        A3 -->|Yes: adds weeks to months| A4
+        A1 --> A4
+        A4 --> A5 --> A6
+        A6 -->|Yes| A7
+        A6 -->|No| REL1
+        A7 --> REL1
     end
 
-    subgraph LN2["Lane 2 - Dealer, about 156 retailers in 53 markets"]
-        D1["2 Sales consultation, order<br/>and deposit (inferred)"]
-        D2{"Personalisation beyond<br/>catalogue options?"}
-        D3["11 Pre-delivery inspection<br/>and handover (inferred)"]
+    subgraph PS["B - Planning and supply"]
+        direction TB
+        PP1["6 PLANNING: build slot and<br/>sequence allocated (inferred)"]:::plan
+        PP2["7 PLANNING: bill of materials<br/>exploded, supplier call-offs<br/>issued (inferred)"]:::plan
+        SU1["8 SUPPLIERS: Mercedes-AMG<br/>powertrain and E/E, leather,<br/>audio, seats, others ship"]:::supp
+        SU2["DHL: collects, warehouses,<br/>sequences and kits parts"]:::supp
+        PP1 --> PP2 --> SU1 --> SU2
     end
 
-    subgraph LN3["Lane 3 - Aston Martin sales and Q by Aston Martin"]
-        A1["3a Q Collection option chosen at order,<br/>no added build lead time"]
-        A2["3b Q Commission consultation at<br/>dealer, Gaydon or Mayfair"]
-        A3{"Bespoke design and<br/>engineering agreed?"}
-        A4["4 Specification frozen,<br/>agreed prior to production"]
-        A5["5 Order enters order bank,<br/>core order book about 5 months in Q3 2026"]
-        A6{"US-bound car?"}
-        A7["Allocate within quarterly US quota,<br/>10 percent tariff up to 100,000 UK cars a year"]
+    subgraph BD["C - Build and delivery"]
+        direction TB
+        PL1["9 PLANT: body, paint, trim<br/>and assembly, Gaydon<br/>or St Athan"]:::plant
+        PL2{"PLANT: all parts<br/>fitted?"}:::plant
+        PL3["PLANT: car held as WIP<br/>awaiting parts, e.g. 350<br/>DBX707s, June 2022"]:::stall
+        SU3["SUPPLIERS: late parts<br/>expedited (inferred)"]:::supp
+        PL4["PLANT: end-of-line tests and<br/>named final inspection"]:::plant
+        LO1["10 LOGISTICS: shipped to market,<br/>carrier and mode not verified"]:::log
+        D3["11 DEALER: pre-delivery<br/>inspection, handover (inferred)"]:::dealer
+        C2(["12 CUSTOMER: takes delivery"]):::cust
+        PL1 --> PL2
+        PL2 -->|No| PL3
+        PL3 --> SU3
+        SU3 -->|Part delivered| PL1
+        PL2 -->|Yes| PL4
+        PL4 --> LO1 --> D3 --> C2
     end
 
-    subgraph LN4["Lane 4 - Production planning"]
-        PP1["6 Build slot and sequence allocated (inferred)"]
-        PP2["7 Bill of materials exploded and<br/>supplier call-offs issued (inferred)"]
-    end
+    OC --> PS --> BD
 
-    subgraph LN5["Lane 5 - Suppliers and DHL Supply Chain"]
-        SU1["8 Tier-1 suppliers ship: Mercedes-AMG powertrain<br/>and E/E architecture, leather, audio, seats, others"]
-        SU2["DHL collects, warehouses,<br/>sequences and kits parts"]
-        SU3["Late parts expedited (inferred)"]
-    end
-
-    subgraph LN6["Lane 6 - Plant: Gaydon or St Athan"]
-        PL1["9 Body, paint, trim and assembly"]
-        PL2{"All parts fitted?"}
-        PL3["Car held as WIP awaiting parts,<br/>e.g. 350 DBX707s in June 2022"]
-        PL4["End-of-line tests and<br/>named final inspection"]
-    end
-
-    subgraph LN7["Lane 7 - Outbound logistics"]
-        LO1["10 Vehicle shipped to market,<br/>carrier and mode not verified"]
-    end
-
-    C1 --> D1 --> D2
-    D2 -->|No: standard or Q Collection| A1
-    D2 -->|Yes: Q Commission| A2
-    A1 --> A4
-    A2 --> A3
-    A3 -->|Not yet| A2
-    A3 -->|Yes, adds weeks to months| A4
-    A4 --> A5 --> A6
-    A6 -->|Yes| A7
-    A6 -->|No| PP1
-    A7 --> PP1
-    PP1 --> PP2 --> SU1 --> SU2 --> PL1
-    PL1 --> PL2
-    PL2 -->|No| PL3
-    PL3 --> SU3
-    SU3 -->|Part delivered| PL1
-    PL2 -->|Yes| PL4
-    PL4 --> LO1 --> D3 --> C2
-
-    classDef inferred fill:#fff8e1,stroke:#8d6e63,stroke-dasharray:5 5,color:#000
-    classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
-    class D1,D3,PP1,PP2,SU3 inferred
-    class PL3 bottleneck
+    classDef cust fill:#e8eaf6,stroke:#3949ab,color:#000
+    classDef dealer fill:#e0f2f1,stroke:#00796b,color:#000
+    classDef aml fill:#e3f2fd,stroke:#1565c0,color:#000
+    classDef plan fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    classDef supp fill:#fff3e0,stroke:#e65100,color:#000
+    classDef plant fill:#f1f8e9,stroke:#558b2f,color:#000
+    classDef log fill:#eceff1,stroke:#455a64,color:#000
+    classDef stall fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
