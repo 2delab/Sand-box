@@ -1,0 +1,67 @@
+flowchart TD
+    subgraph LN1["Lane 1 - Customer"]
+        C1(["1 Configures car online or with dealer"])
+        C2(["12 Takes delivery, factory tour<br/>can be arranged via dealer"])
+    end
+
+    subgraph LN2["Lane 2 - Dealer, about 156 retailers in 53 markets"]
+        D1["2 Sales consultation, order<br/>and deposit (inferred)"]
+        D2{"Personalisation beyond<br/>catalogue options?"}
+        D3["11 Pre-delivery inspection<br/>and handover (inferred)"]
+    end
+
+    subgraph LN3["Lane 3 - Aston Martin sales and Q by Aston Martin"]
+        A1["3a Q Collection option chosen at order,<br/>no added build lead time"]
+        A2["3b Q Commission consultation at<br/>dealer, Gaydon or Mayfair"]
+        A3{"Bespoke design and<br/>engineering agreed?"}
+        A4["4 Specification frozen,<br/>agreed prior to production"]
+        A5["5 Order enters order bank,<br/>core order book about 5 months in Q3 2026"]
+        A6{"US-bound car?"}
+        A7["Allocate within quarterly US quota,<br/>10 percent tariff up to 100,000 UK cars a year"]
+    end
+
+    subgraph LN4["Lane 4 - Production planning"]
+        PP1["6 Build slot and sequence allocated (inferred)"]
+        PP2["7 Bill of materials exploded and<br/>supplier call-offs issued (inferred)"]
+    end
+
+    subgraph LN5["Lane 5 - Suppliers and DHL Supply Chain"]
+        SU1["8 Tier-1 suppliers ship: Mercedes-AMG powertrain<br/>and E/E architecture, leather, audio, seats, others"]
+        SU2["DHL collects, warehouses,<br/>sequences and kits parts"]
+        SU3["Late parts expedited (inferred)"]
+    end
+
+    subgraph LN6["Lane 6 - Plant: Gaydon or St Athan"]
+        PL1["9 Body, paint, trim and assembly"]
+        PL2{"All parts fitted?"}
+        PL3["Car held as WIP awaiting parts,<br/>e.g. 350 DBX707s in June 2022"]
+        PL4["End-of-line tests and<br/>named final inspection"]
+    end
+
+    subgraph LN7["Lane 7 - Outbound logistics"]
+        LO1["10 Vehicle shipped to market,<br/>carrier and mode not verified"]
+    end
+
+    C1 --> D1 --> D2
+    D2 -->|No: standard or Q Collection| A1
+    D2 -->|Yes: Q Commission| A2
+    A1 --> A4
+    A2 --> A3
+    A3 -->|Not yet| A2
+    A3 -->|Yes, adds weeks to months| A4
+    A4 --> A5 --> A6
+    A6 -->|Yes| A7
+    A6 -->|No| PP1
+    A7 --> PP1
+    PP1 --> PP2 --> SU1 --> SU2 --> PL1
+    PL1 --> PL2
+    PL2 -->|No| PL3
+    PL3 --> SU3
+    SU3 -->|Part delivered| PL1
+    PL2 -->|Yes| PL4
+    PL4 --> LO1 --> D3 --> C2
+
+    classDef inferred fill:#fff8e1,stroke:#8d6e63,stroke-dasharray:5 5,color:#000
+    classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
+    class D1,D3,PP1,PP2,SU3 inferred
+    class PL3 bottleneck

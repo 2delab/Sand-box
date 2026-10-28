@@ -1,0 +1,17 @@
+flowchart LR
+    SUP["Suppliers via DHL inbound,<br/>about 3 days line-side cover in 2019"] --> PS["Production stock: raw materials<br/>and bought-in components<br/>within the 157.7m GBP line, 2023"]
+    SUP --> SP["Parts for resale and service parts<br/>within the 157.7m GBP line, 2023<br/>about 80,000 SKUs, ToolsGroup"]
+    PS --> WIP["Work in progress<br/>33.2m GBP in 2023, 48.5m GBP in 2022"]
+    WIP -->|Missing part| HOLD["Stalled WIP awaiting parts,<br/>e.g. 350 DBX707s in June 2022"]
+    HOLD -->|Part arrives| WIP
+    WIP --> FV["Finished vehicles 81.8m GBP in 2023,<br/>incl. 49.0m GBP company service cars"]
+    FV -->|Wholesale, revenue recognised| DS["Dealer stock, off balance sheet:<br/>destock 190 units 2019, 1,580 units 2020,<br/>second destock 2025 to 2026"]
+    DS -->|Retail sale| CUST(["Customer"])
+    SP --> DLRS["Dealer workshops and aftersales"]
+    SP --> NPW["Aston Martin Works heritage parts"]
+    NPW --> DLRS
+    DLRS --> CUST
+    CUST -.->|Specials deposits pre-fund build| WIP
+
+    classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
+    class HOLD bottleneck

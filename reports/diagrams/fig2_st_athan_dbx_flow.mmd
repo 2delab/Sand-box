@@ -1,0 +1,49 @@
+flowchart LR
+    subgraph INBD["Inbound - DHL Supply Chain"]
+        I1["Collection from UK, European<br/>and global suppliers"]
+        I2["Sequencing, kitting,<br/>decanting and reworking"]
+        I1 --> I2
+    end
+
+    subgraph HG1["Super-hangar 1 - Body-in-white<br/>takt 39 to 40 min, two shift patterns"]
+        S1["Underframe or tub line"]
+        S2["Body-in-white line"]
+        S3["Oven cure of bonded aluminium<br/>three separate ovens<br/>BOTTLENECK: slowest step"]
+        S4["Body finishing line"]
+        S1 --> S2 --> S3 --> S4
+    end
+
+    BUF[("Buffer of cured bodies<br/>between shifts (inferred)")]
+
+    subgraph HG2["Super-hangar 2 - Paint shop, three storeys<br/>takt 20 min"]
+        S5["Ground floor: manual cleaning,<br/>two assisting robots"]
+        S6["Upper floor: three Motoman robots<br/>apply primer, base and clear coat"]
+        S7["Manual final polish,<br/>optional mirror finish"]
+        S5 --> S6 --> S7
+    end
+
+    subgraph HG3["Super-hangar 3 - Final assembly<br/>takt 20 min"]
+        S8["Trim and assembly stations"]
+        S9["Powertrain marriage:<br/>Mercedes-AMG V8"]
+        S10["End-of-line tests and inspection<br/>(inferred, assumed similar to Gaydon)"]
+        S8 --> S9 --> S10
+    end
+
+    I2 --> S1
+    I2 --> S8
+    S4 --> BUF
+    BUF --> S5
+    S7 --> S8
+    S10 --> OUT(["Dispatch: about 80 percent<br/>of output exported"])
+
+    N1["Throughput: about 85 h per DBX<br/>if nothing stops"]
+    N2["Balance check (inferred):<br/>2 shifts x 450 min / 40 min = 22.5 bodies per day<br/>1 shift x 450 min / 20 min = 22.5 cars per day"]
+    N1 -.- S8
+    N2 -.- BUF
+
+    classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
+    classDef inferred fill:#fff8e1,stroke:#8d6e63,stroke-dasharray:5 5,color:#000
+    classDef note fill:#eef3f8,stroke:#5d6d7e,color:#000
+    class S3 bottleneck
+    class BUF,S10,N2 inferred
+    class N1 note
