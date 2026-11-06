@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="690pt" height="330pt" viewBox="0 0 690 330">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5b6b7f"/></marker></defs>
+<rect x="0" y="0" width="690" height="330" fill="#ffffff"/>
+<rect x="4" y="4" width="682" height="54" rx="4" fill="#fbfbf9" stroke="#d8d6cf" stroke-width="0.8"/>
+<text x="10.0" y="16.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Strategic partners and shareholders: capital and technology are intertwined</text>
+<rect x="4" y="66" width="112" height="196" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="10.0" y="78.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Tier 2</text>
+<rect x="124" y="66" width="140" height="196" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="130.0" y="78.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Tier 1 (single-source risk)</text>
+<rect x="272" y="66" width="104" height="196" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="278.0" y="78.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Inbound logistics</text>
+<rect x="384" y="66" width="86" height="196" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="390.0" y="78.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Assembly</text>
+<rect x="530" y="66" width="156" height="196" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="536.0" y="78.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Distribution</text>
+<polyline points="108.0,99.0 132.0,99.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="108.0,143.0 132.0,143.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="108.0,187.0 132.0,187.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="108.0,231.0 132.0,231.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" stroke-dasharray="3,2" marker-end="url(#ah)"/>
+<polyline points="256.0,99.0 268.0,99.0 268.0,121.0 280.0,121.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="256.0,143.0 268.0,143.0 268.0,121.0 280.0,121.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="256.0,187.0 283.0,187.0 283.0,198.0 310.0,198.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="256.0,231.0 283.0,231.0 283.0,198.0 310.0,198.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="324.0,158.0 324.0,176.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="338.0,198.0 378.0,198.0 378.0,104.0 390.0,104.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="338.0,198.0 378.0,198.0 378.0,151.0 390.0,151.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="464.0,104.0 500.0,104.0 500.0,106.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="464.0,151.0 469.0,151.0 469.0,138.0 474.0,138.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="526.0,138.0 540.0,138.0 540.0,109.0 553.0,109.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="591.0,109.0 602.5,109.0 602.5,108.0 614.0,108.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="647.0,128.0 647.0,134.0 609.0,138.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="609.0,168.0 609.0,175.0 614.0,175.0 614.0,182.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="609.0,224.0 609.0,217.0 614.0,217.0 614.0,210.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="12" y="22" width="125" height="28" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="74.5" y="34.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Yew Tree consortium</text><text x="74.5" y="42.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">c.33% (2025)</text>
+<rect x="147" y="22" width="125" height="28" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="209.5" y="34.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Saudi PIF</text><text x="209.5" y="42.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">c.17%</text>
+<rect x="282" y="22" width="125" height="28" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="344.5" y="34.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Geely</text><text x="344.5" y="42.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">c.17% (2023)</text>
+<rect x="417" y="22" width="125" height="28" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="479.5" y="34.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Mercedes-Benz</text><text x="479.5" y="42.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">c.9.4% (2023)</text>
+<rect x="552" y="22" width="128" height="28" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="616.0" y="34.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Lucid: US$232m access fee;</text><text x="616.0" y="42.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">no parts bought by end-2025</text>
+<rect x="12" y="84" width="96" height="30" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="60.0" y="101.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Aluminium producers</text>
+<rect x="12" y="128" width="96" height="30" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="60.0" y="141.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Semiconductor</text><text x="60.0" y="149.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">fabs</text>
+<rect x="12" y="172" width="96" height="30" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="60.0" y="189.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Hides and textiles</text>
+<rect x="12" y="216" width="96" height="30" rx="2" fill="#ffffff" stroke="#8d6e63" stroke-width="0.9" stroke-dasharray="3,2"/>
+<text x="60.0" y="229.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Castings and</text><text x="60.0" y="237.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">extrusions (inferred)</text>
+<rect x="132" y="84" width="124" height="30" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="194.0" y="97.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Mercedes-AMG: V8, E/E</text><text x="194.0" y="105.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">architecture (since 2013)</text>
+<rect x="132" y="128" width="124" height="30" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="194.0" y="141.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">ZF gearbox; Bilstein</text><text x="194.0" y="149.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">dampers; Michelin, Pirelli</text>
+<rect x="132" y="172" width="124" height="30" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="194.0" y="185.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Bridge of Weir leather;</text><text x="194.0" y="193.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Bowers &amp; Wilkins audio</text>
+<rect x="132" y="216" width="124" height="30" rx="2" fill="#fbe3e3" stroke="#b03a2e" stroke-width="1.8"/>
+<text x="194.0" y="229.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Seat and trim suppliers</text><text x="194.0" y="237.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(insolvencies, 2024)</text>
+<rect x="280" y="84" width="88" height="74" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="324.0" y="107.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.5" font-weight="normal" fill="#0b0b0b" text-anchor="middle">DHL Supply Chain</text><text x="324.0" y="115.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.5" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(since 2017; to 2027):</text><text x="324.0" y="123.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.5" font-weight="normal" fill="#0b0b0b" text-anchor="middle">inbound transport,</text><text x="324.0" y="130.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.5" font-weight="normal" fill="#0b0b0b" text-anchor="middle">warehousing,</text><text x="324.0" y="138.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.5" font-weight="normal" fill="#0b0b0b" text-anchor="middle">sequencing, kitting</text>
+<polygon points="324.0,176 352,220 296,220" fill="#fff3c4" stroke="#b07d00" stroke-width="0.9"/>
+<text x="324.0" y="201.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">3–5 days</text><text x="324.0" y="209.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">line-side</text>
+<rect x="390" y="84" width="74" height="40" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="427.0" y="98.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Gaydon:</text><text x="427.0" y="106.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">core cars,</text><text x="427.0" y="114.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Specials</text>
+<rect x="390" y="136" width="74" height="30" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="427.0" y="153.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">St Athan: DBX</text>
+<rect x="390" y="180" width="74" height="40" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="427.0" y="198.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Newport Pagnell:</text><text x="427.0" y="206.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Works heritage</text>
+<polygon points="495.3333333333333,106 504.6666666666667,106 526,138.0 504.6666666666667,170 495.3333333333333,170 474,138.0" fill="#fde2b8" stroke="#d35400" stroke-width="1.6"/>
+<text x="500.0" y="132.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">CODP</text><text x="500.0" y="140.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">core cars:</text><text x="500.0" y="147.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">spec freeze</text>
+<polygon points="572.0,84 610,134 534,134" fill="#fff3c4" stroke="#b07d00" stroke-width="0.9"/>
+<text x="572.0" y="110.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="5.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Dealer stock</text><text x="572.0" y="117.0" font-family="Calibri, Carlito, Arial, sans-serif" font-size="5.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(off balance</text><text x="572.0" y="123.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="5.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">sheet)</text>
+<rect x="614" y="88" width="66" height="40" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="647.0" y="102.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">156 dealers,</text><text x="647.0" y="110.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">53 countries</text><text x="647.0" y="118.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(2025)</text>
+<rect x="538" y="138" width="142" height="30" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="609.0" y="151.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">US: 10% tariff within quota of</text><text x="609.0" y="159.0" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">100,000 UK cars a year (2025)</text>
+<rect x="562" y="182" width="104" height="28" rx="14.0" fill="#e8eef6" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="614.0" y="194.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Customers: Americas</text><text x="614.0" y="202.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">34%, APAC 18% (2025)</text>
+<rect x="538" y="224" width="142" height="28" rx="2" fill="#e6f4ec" stroke="#2e7d4f" stroke-width="0.9"/>
+<text x="609.0" y="236.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Service parts: c.80,000 SKUs,</text><text x="609.0" y="244.0" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">ToolsGroup safety stock</text>
+<polyline points="6.0,276.0 466.0,276.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="684.0,276.0 484.0,276.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="610.0,302.0 430.0,302.0 430.0,264.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" stroke-dasharray="3,2" marker-end="url(#ah)"/>
+<text x="120.0" y="292.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.2" font-weight="bold" fill="#1f3a5f" text-anchor="start">LEAN upstream: forecast and schedule driven, thin buffers, single sources</text>
+<text x="488.0" y="292.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.2" font-weight="bold" fill="#d35400" text-anchor="start">AGILE downstream: order driven</text>
+<text x="440.0" y="314.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="start">orders and specifications (information flow)</text>
+<text x="6.0" y="326.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="start">CODP = customer order decoupling point. For Q Commission it moves upstream to design; for Specials to engineering and procurement (pre-sold against deposits).</text>
+</svg>

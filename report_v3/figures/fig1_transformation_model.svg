@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460pt" height="300pt" viewBox="0 0 460 300">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5b6b7f"/></marker></defs>
+<rect x="0" y="0" width="460" height="300" fill="#ffffff"/>
+<rect x="4" y="4" width="134" height="140" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="10.0" y="16.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Transformed resources</text>
+<rect x="4" y="150" width="134" height="112" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="10.0" y="162.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Transforming resources</text>
+<rect x="163" y="4" width="134" height="258" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="169.0" y="16.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Transformation</text>
+<rect x="322" y="4" width="134" height="258" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="328.0" y="16.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Outputs</text>
+<polyline points="230.0,88.0 230.0,100.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="230.0,128.0 230.0,140.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="230.0,168.0 230.0,180.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="230.0,208.0 230.0,220.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="230.0,48.0 230.0,60.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="12" y="20" width="118" height="25" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="71.0" y="30.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Mercedes-AMG V8 and</text><text x="71.0" y="39.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">E/E architecture</text>
+<rect x="12" y="50" width="118" height="25" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="71.0" y="60.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Aluminium structures,</text><text x="71.0" y="69.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">carbon (Specials)</text>
+<rect x="12" y="80" width="118" height="25" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="71.0" y="90.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Leather, tyres, audio,</text><text x="71.0" y="99.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">seats, electronics</text>
+<rect x="12" y="110" width="118" height="25" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="71.0" y="120.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Customer specification</text><text x="71.0" y="129.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">and Specials deposits</text>
+<rect x="12" y="166" width="118" height="25" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="71.0" y="176.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Gaydon: core GT/sports</text><text x="71.0" y="185.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">cars and Specials</text>
+<rect x="12" y="197" width="118" height="25" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="71.0" y="207.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">St Athan: DBX</text><text x="71.0" y="216.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(20-minute takt)</text>
+<rect x="12" y="228" width="118" height="25" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="71.0" y="238.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">c.2,800 staff; c.200</text><text x="71.0" y="247.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">labour-hours per car</text>
+<rect x="171" y="20" width="118" height="28" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="230.0" y="32.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Engineering and</text><text x="230.0" y="41.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">launch readiness</text>
+<rect x="171" y="60" width="118" height="28" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="230.0" y="72.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Body: bond, rivet</text><text x="230.0" y="81.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">and oven cure</text>
+<rect x="171" y="100" width="118" height="28" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="230.0" y="112.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Paint: 25–50 hours</text><text x="230.0" y="121.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">incl. hand polish</text>
+<rect x="171" y="140" width="118" height="28" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="230.0" y="152.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Trim and final</text><text x="230.0" y="161.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">assembly</text>
+<rect x="171" y="180" width="118" height="28" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="230.0" y="192.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Test, audit and</text><text x="230.0" y="201.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">named inspection</text>
+<rect x="171" y="220" width="118" height="28" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="230.0" y="232.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Specials: dedicated</text><text x="230.0" y="241.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">project build areas</text>
+<rect x="330" y="20" width="118" height="30" rx="2" fill="#e6f4ec" stroke="#2e7d4f" stroke-width="0.9"/>
+<text x="389.0" y="33.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">5,448 cars in 2025</text><text x="389.0" y="42.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(£231k revenue per car)</text>
+<rect x="330" y="68" width="118" height="30" rx="2" fill="#e6f4ec" stroke="#2e7d4f" stroke-width="0.9"/>
+<text x="389.0" y="81.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Q by Aston Martin</text><text x="389.0" y="90.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">personalisation</text>
+<rect x="330" y="116" width="118" height="30" rx="2" fill="#e6f4ec" stroke="#2e7d4f" stroke-width="0.9"/>
+<text x="389.0" y="129.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Specials: Valhalla,</text><text x="389.0" y="138.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Valkyrie</text>
+<rect x="330" y="164" width="118" height="30" rx="2" fill="#e6f4ec" stroke="#2e7d4f" stroke-width="0.9"/>
+<text x="389.0" y="177.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Aftersales and Works</text><text x="389.0" y="186.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">heritage services</text>
+<rect x="330" y="212" width="118" height="30" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="389.0" y="225.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Emissions, waste,</text><text x="389.0" y="234.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">jobs and skills</text>
+<rect x="104" y="272" width="252" height="22" rx="11.0" fill="#e8eef6" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="230.0" y="285.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#0b0b0b" text-anchor="middle">Performance objectives: quality · dependability · flexibility · speed · cost</text>
+<polyline points="140.0,75.0 161.0,75.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="140.0,205.0 161.0,205.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="299.0,133.0 320.0,133.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="389.0,264.0 389.0,283.0 358.0,283.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" stroke-dasharray="3,2" marker-end="url(#ah)"/>
+<polyline points="102.0,283.0 71.0,283.0 71.0,264.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" stroke-dasharray="3,2" marker-end="url(#ah)"/>
+<rect x="66.6" y="285.5" width="34.8" height="9" fill="#ffffff" opacity="0.92"/>
+<text x="84.0" y="292.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="middle">feedback</text>
+</svg>

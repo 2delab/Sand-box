@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460pt" height="286pt" viewBox="0 0 460 286">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5b6b7f"/></marker></defs>
+<rect x="0" y="0" width="460" height="286" fill="#ffffff"/>
+<rect x="4" y="4" width="140" height="278" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="10.0" y="16.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Initiatives</text>
+<rect x="160" y="4" width="140" height="278" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="166.0" y="16.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Measured outcome, 2022–25</text>
+<rect x="316" y="4" width="140" height="278" rx="4" fill="#f6f8fb" stroke="#c9d3e0" stroke-width="0.8"/>
+<text x="322.0" y="16.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.8" font-weight="bold" fill="#1f3a5f" text-anchor="start">Stakeholder effect</text>
+<polyline points="136.0,36.5 168.0,36.5" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="136.0,73.5 168.0,73.5" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="136.0,110.5 168.0,110.5" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="136.0,147.5 168.0,147.5" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="136.0,184.5 168.0,184.5" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="136.0,221.5 168.0,221.5" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="136.0,258.5 168.0,258.5" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="292.0,36.5 324.0,37.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="292.0,184.5 308.0,184.5 308.0,111.0 324.0,111.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="292.0,221.5 308.0,221.5 308.0,167.0 324.0,167.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="292.0,221.5 308.0,221.5 308.0,211.0 324.0,211.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="292.0,258.5 324.0,259.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="12" y="22" width="124" height="29" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="74.0" y="34.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Renewable electricity</text><text x="74.0" y="42.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(REGOs) since 2019</text>
+<rect x="168" y="22" width="124" height="29" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="230.0" y="34.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Scope 2: market −98%,</text><text x="230.0" y="42.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">location-based only −4%</text>
+<rect x="12" y="59" width="124" height="29" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="74.0" y="71.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">ISO 50001; gas cuts at</text><text x="74.0" y="79.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">both plants (2025)</text>
+<rect x="168" y="59" width="124" height="29" rx="2" fill="#fbe3e3" stroke="#b03a2e" stroke-width="1.8"/>
+<text x="230.0" y="71.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Scope 1 −9%, but per</text><text x="230.0" y="79.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">car +11% (fixed gas load)</text>
+<rect x="12" y="96" width="124" height="29" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="74.0" y="108.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Zero waste to landfill</text><text x="74.0" y="116.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(UK plants, 2024)</text>
+<rect x="168" y="96" width="124" height="29" rx="2" fill="#e6f4ec" stroke="#2e7d4f" stroke-width="0.9"/>
+<text x="230.0" y="108.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Total waste −14%</text><text x="230.0" y="116.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(2025)</text>
+<rect x="12" y="133" width="124" height="29" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="74.0" y="145.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">DHL HVO and bio-LNG</text><text x="74.0" y="153.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">inbound fleet (2025)</text>
+<rect x="168" y="133" width="124" height="29" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="230.0" y="145.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">663 t saved in 2026:</text><text x="230.0" y="153.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">c.0.06% of Scope 3</text>
+<rect x="12" y="170" width="124" height="29" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="74.0" y="182.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Code of Conduct; minerals</text><text x="74.0" y="190.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">policy (3TG only)</text>
+<rect x="168" y="170" width="124" height="29" rx="2" fill="#fbe3e3" stroke="#b03a2e" stroke-width="1.8"/>
+<text x="230.0" y="182.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Scope 3 excl. use phase</text><text x="230.0" y="190.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">+32%; no audit data</text>
+<rect x="12" y="207" width="124" height="29" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="74.0" y="223.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Electrification roadmap</text>
+<rect x="168" y="207" width="124" height="29" rx="2" fill="#fbe3e3" stroke="#b03a2e" stroke-width="1.8"/>
+<text x="230.0" y="219.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">First BEV 2025 →</text><text x="230.0" y="227.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">2033–35; SBTi exit</text>
+<rect x="12" y="244" width="124" height="29" rx="2" fill="#eef2f8" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="74.0" y="256.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Safety programme;</text><text x="74.0" y="264.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">apprenticeships</text>
+<rect x="168" y="244" width="124" height="29" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="230.0" y="256.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Lost-time accidents 13→7;</text><text x="230.0" y="264.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">apprentices 25→0</text>
+<rect x="324" y="22" width="124" height="30" rx="2" fill="#e6f4ec" stroke="#2e7d4f" stroke-width="0.9"/>
+<text x="386.0" y="35.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Disclosure raters:</text><text x="386.0" y="43.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">CDP Climate C → B</text>
+<rect x="324" y="96" width="124" height="30" rx="2" fill="#fbe3e3" stroke="#b03a2e" stroke-width="1.8"/>
+<text x="386.0" y="109.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Risk raters:</text><text x="386.0" y="117.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">MSCI A → BBB</text>
+<rect x="324" y="152" width="124" height="30" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="386.0" y="165.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Investors and creditors:</text><text x="386.0" y="173.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">liquidity first</text>
+<rect x="324" y="196" width="124" height="30" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="386.0" y="209.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Regulators: UK and EU</text><text x="386.0" y="217.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">small-volume derogations</text>
+<rect x="324" y="244" width="124" height="30" rx="2" fill="#fbe3e3" stroke="#b03a2e" stroke-width="1.8"/>
+<text x="386.0" y="257.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Employees: two rounds</text><text x="386.0" y="265.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">of job cuts</text>
+</svg>

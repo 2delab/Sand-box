@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="690pt" height="348pt" viewBox="0 0 690 348">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5b6b7f"/></marker></defs>
+<rect x="0" y="0" width="690" height="348" fill="#ffffff"/>
+<rect x="6" y="6" width="678" height="40" fill="#ffffff" stroke="#c9d3e0" stroke-width="0.7"/>
+<rect x="6" y="6" width="34" height="40" fill="#1f3a5f" stroke="#1f3a5f" stroke-width="0.7"/>
+<g transform="rotate(-90 23.0 26.0)"><text x="23.0" y="28.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#ffffff" text-anchor="middle">Customer</text></g>
+<rect x="6" y="46" width="678" height="40" fill="#fafbfd" stroke="#c9d3e0" stroke-width="0.7"/>
+<rect x="6" y="46" width="34" height="40" fill="#1f3a5f" stroke="#1f3a5f" stroke-width="0.7"/>
+<g transform="rotate(-90 23.0 66.0)"><text x="23.0" y="68.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#ffffff" text-anchor="middle">Dealer</text></g>
+<rect x="6" y="86" width="678" height="40" fill="#ffffff" stroke="#c9d3e0" stroke-width="0.7"/>
+<rect x="6" y="86" width="34" height="40" fill="#1f3a5f" stroke="#1f3a5f" stroke-width="0.7"/>
+<g transform="rotate(-90 23.0 106.0)"><text x="23.0" y="104.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#ffffff" text-anchor="middle">AML sales</text><text x="23.0" y="113.0" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#ffffff" text-anchor="middle">and Q</text></g>
+<rect x="6" y="126" width="678" height="40" fill="#fafbfd" stroke="#c9d3e0" stroke-width="0.7"/>
+<rect x="6" y="126" width="34" height="40" fill="#1f3a5f" stroke="#1f3a5f" stroke-width="0.7"/>
+<g transform="rotate(-90 23.0 146.0)"><text x="23.0" y="144.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#ffffff" text-anchor="middle">Production</text><text x="23.0" y="153.0" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#ffffff" text-anchor="middle">planning</text></g>
+<rect x="6" y="166" width="678" height="40" fill="#ffffff" stroke="#c9d3e0" stroke-width="0.7"/>
+<rect x="6" y="166" width="34" height="40" fill="#1f3a5f" stroke="#1f3a5f" stroke-width="0.7"/>
+<g transform="rotate(-90 23.0 186.0)"><text x="23.0" y="184.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#ffffff" text-anchor="middle">Suppliers</text><text x="23.0" y="193.0" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#ffffff" text-anchor="middle">and DHL</text></g>
+<rect x="6" y="206" width="678" height="40" fill="#fafbfd" stroke="#c9d3e0" stroke-width="0.7"/>
+<rect x="6" y="206" width="34" height="40" fill="#1f3a5f" stroke="#1f3a5f" stroke-width="0.7"/>
+<g transform="rotate(-90 23.0 226.0)"><text x="23.0" y="228.6" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#ffffff" text-anchor="middle">Plant</text></g>
+<rect x="6" y="246" width="678" height="40" fill="#ffffff" stroke="#c9d3e0" stroke-width="0.7"/>
+<rect x="6" y="246" width="34" height="40" fill="#1f3a5f" stroke="#1f3a5f" stroke-width="0.7"/>
+<g transform="rotate(-90 23.0 266.0)"><text x="23.0" y="264.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#ffffff" text-anchor="middle">Outbound</text><text x="23.0" y="273.0" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.4" font-weight="bold" fill="#ffffff" text-anchor="middle">logistics</text></g>
+<polyline points="71.5,39.0 71.5,66.0 101.5,66.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="148.5,66.0 153.0,66.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="178.5,82.0 178.5,106.0 208.5,106.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="178.1" y="90.5" width="16.8" height="9" fill="#ffffff" opacity="0.92"/>
+<text x="186.5" y="97.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="middle">Yes</text>
+<polyline points="204.0,66.0 285.5,66.0 285.5,93.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="219.9" y="56.5" width="13.2" height="9" fill="#ffffff" opacity="0.92"/>
+<text x="226.5" y="63.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="middle">No</text>
+<polyline points="255.5,106.0 262.0,106.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="244.7" y="121.5" width="27.6" height="9" fill="#ffffff" opacity="0.92"/>
+<text x="258.5" y="128.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="middle">+weeks</text>
+<polyline points="285.5,119.0 285.5,146.0 315.5,146.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="362.5,146.0 369.0,146.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="392.5,159.0 392.5,186.0 422.5,186.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="446.0,199.0 446.0,226.0 474.0,226.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="499.5,210.0 499.5,199.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="500.9" y="199.5" width="13.2" height="9" fill="#ffffff" opacity="0.92"/>
+<text x="507.5" y="206.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="middle">No</text>
+<polyline points="476.0,186.0 469.5,186.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="525.0,226.0 529.5,226.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="519.1" y="204.5" width="16.8" height="9" fill="#ffffff" opacity="0.92"/>
+<text x="527.5" y="211.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="middle">Yes</text>
+<polyline points="553.0,239.0 553.0,266.0 583.0,266.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="630.0,266.0 660.0,266.0 660.0,79.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="660.0,53.0 660.0,39.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="48.0" y="13.0" width="47" height="26" rx="13.0" fill="#e8eef6" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="71.5" y="20.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Configure car</text><text x="71.5" y="28.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">online or at</text><text x="71.5" y="35.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">dealer</text>
+<rect x="101.5" y="53.0" width="47" height="26" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="125.0" y="64.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Order and</text><text x="125.0" y="72.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">deposit</text>
+<polygon points="178.5,50.0 204.0,66.0 178.5,82.0 153.0,66.0" fill="#fff7e0" stroke="#b07d00" stroke-width="0.9"/>
+<text x="178.5" y="64.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Q Commis-</text><text x="178.5" y="72.0" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">sion?</text>
+<rect x="208.5" y="93.0" width="47" height="26" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="232.0" y="100.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Q design and</text><text x="232.0" y="108.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">feasibility</text><text x="232.0" y="115.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">sign-off</text>
+<rect x="262.0" y="93.0" width="47" height="26" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="285.5" y="100.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Spec frozen;</text><text x="285.5" y="108.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">order bank</text><text x="285.5" y="115.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(c.5 months)</text>
+<rect x="315.5" y="133.0" width="47" height="26" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="339.0" y="140.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Build slot;</text><text x="339.0" y="148.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">US quota</text><text x="339.0" y="155.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">check</text>
+<rect x="369.0" y="133.0" width="47" height="26" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="392.5" y="140.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">MRP explosion;</text><text x="392.5" y="148.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">supplier</text><text x="392.5" y="155.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">call-offs</text>
+<rect x="422.5" y="173.0" width="47" height="26" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="446.0" y="180.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Ship parts;</text><text x="446.0" y="188.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">DHL sequence</text><text x="446.0" y="195.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">and kit</text>
+<polygon points="499.5,210.0 525.0,226.0 499.5,242.0 474.0,226.0" fill="#fff7e0" stroke="#b07d00" stroke-width="0.9"/>
+<text x="499.5" y="224.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Full kit</text><text x="499.5" y="232.0" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">available?</text>
+<rect x="476.0" y="173.0" width="47" height="26" rx="2" fill="#fbe3e3" stroke="#b03a2e" stroke-width="1.8"/>
+<text x="499.5" y="180.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Expedite;</text><text x="499.5" y="188.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">car held</text><text x="499.5" y="195.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">as WIP</text>
+<rect x="529.5" y="213.0" width="47" height="26" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="553.0" y="220.9" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Build and test</text><text x="553.0" y="228.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(Figure 4)</text><text x="553.0" y="235.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">RFT 65%→95%</text>
+<rect x="583.0" y="253.0" width="47" height="26" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="606.5" y="264.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Ship to</text><text x="606.5" y="272.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">market</text>
+<rect x="636.5" y="53.0" width="47" height="26" rx="2" fill="#ffffff" stroke="#8d6e63" stroke-width="0.9" stroke-dasharray="3,2"/>
+<text x="660.0" y="60.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">PDI and</text><text x="660.0" y="68.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">handover</text><text x="660.0" y="75.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(inferred)</text>
+<rect x="636.5" y="13.0" width="47" height="26" rx="13.0" fill="#e8eef6" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="660.0" y="20.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Delivery:</text><text x="660.0" y="28.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">5–8 months</text><text x="660.0" y="35.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">after order</text>
+<rect x="48.0" y="310" width="154.5" height="18" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="125.2" y="321.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Order capture: days</text>
+<rect x="204.5" y="310" width="212.0" height="18" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="310.5" y="321.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Order-bank queue: c.5 months (largest wait)</text>
+<rect x="418.5" y="310" width="158.5" height="18" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="497.8" y="321.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Parts and build: 8–16 working days</text>
+<rect x="579.0" y="310" width="102.5" height="18" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="630.2" y="321.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Shipping and PDI: weeks</text>
+<text x="6.0" y="304.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="7.2" font-weight="bold" fill="#1f3a5f" text-anchor="start">Lead-time ladder (core car)</text>
+<text x="48.0" y="344.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="start">Factory flow time is c.5–15% of the customer's wait (Little's Law estimate, Section 3.3). Dashed border = inferred step; red = recurrent bottleneck.</text>
+</svg>

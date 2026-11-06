@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="690pt" height="236pt" viewBox="0 0 690 236">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5b6b7f"/></marker></defs>
+<rect x="0" y="0" width="690" height="236" fill="#ffffff"/>
+<polyline points="94.0,64.0 128.0,64.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="168.0,64.0 202.0,64.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="290.0,64.0 300.0,64.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="388.0,64.0 422.0,64.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="386.8" y="51.5" width="38.4" height="9" fill="#ffffff" opacity="0.92"/>
+<text x="406.0" y="58.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="middle">wholesale</text>
+<polyline points="462.0,64.0 526.0,64.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="488.2" y="51.5" width="27.6" height="9" fill="#ffffff" opacity="0.92"/>
+<text x="502.0" y="58.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="middle">retail</text>
+<polyline points="246.0,84.0 229.0,95.0 233.0,104.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="204.4" y="92.5" width="49.2" height="9" fill="#ffffff" opacity="0.92"/>
+<text x="229.0" y="99.3" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="middle">missing part</text>
+<polyline points="168.0,176.0 234.0,176.0 234.0,177.0 300.0,177.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<polyline points="388.0,177.0 570.0,177.0 570.0,84.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" marker-end="url(#ah)"/>
+<rect x="6" y="44" width="88" height="40" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="50.0" y="66.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Suppliers</text>
+<polygon points="148.0,38 188,90 108,90" fill="#fff3c4" stroke="#b07d00" stroke-width="0.9"/>
+<text x="148.0" y="65.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Parts at DHL</text><text x="148.0" y="72.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">hubs, line-side</text><text x="148.0" y="79.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(3–5 days)</text>
+<rect x="202" y="44" width="88" height="40" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="246.0" y="62.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Work in progress</text><text x="246.0" y="70.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">£33.2m (2023)</text>
+<rect x="300" y="44" width="88" height="40" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="344.0" y="58.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Finished vehicles</text><text x="344.0" y="66.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">£81.8m (2023), incl.</text><text x="344.0" y="73.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">£49.0m service cars</text>
+<polygon points="442.0,38 482,90 402,90" fill="#fff3c4" stroke="#b07d00" stroke-width="0.9"/>
+<text x="442.0" y="65.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Dealer stock</text><text x="442.0" y="72.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(off balance</text><text x="442.0" y="79.7" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">sheet)</text>
+<rect x="526" y="44" width="88" height="40" rx="20.0" fill="#e8eef6" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="570.0" y="66.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.8" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Customer</text>
+<rect x="194" y="104" width="78" height="34" rx="2" fill="#fbe3e3" stroke="#b03a2e" stroke-width="1.8"/>
+<text x="233.0" y="116.0" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.0" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Stalled WIP: rejoins line</text><text x="233.0" y="123.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.0" font-weight="normal" fill="#0b0b0b" text-anchor="middle">when part arrives</text><text x="233.0" y="130.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.0" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(350 DBX707s, 2022)</text>
+<polygon points="148.0,150 188,202 108,202" fill="#fff3c4" stroke="#b07d00" stroke-width="0.9"/>
+<text x="148.0" y="180.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Service parts</text><text x="148.0" y="188.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">c.80,000 SKUs</text>
+<rect x="300" y="162" width="88" height="30" rx="2" fill="#ffffff" stroke="#1f3a5f" stroke-width="0.9"/>
+<text x="344.0" y="175.4" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Dealer workshops</text><text x="344.0" y="183.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.6" font-weight="normal" fill="#0b0b0b" text-anchor="middle">and Works heritage</text>
+<rect x="402" y="104" width="80" height="30" rx="2" fill="#e6f4ec" stroke="#2e7d4f" stroke-width="0.9"/>
+<text x="442.0" y="117.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Specials deposits</text><text x="442.0" y="125.0" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.4" font-weight="normal" fill="#0b0b0b" text-anchor="middle">£272m (2023)</text>
+<rect x="6" y="4" width="88" height="24" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="50.0" y="14.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">MRP explosion;</text><text x="50.0" y="21.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">supplier call-offs</text>
+<rect x="104" y="4" width="88" height="24" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="148.0" y="14.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">JIT, just-in-sequence</text><text x="148.0" y="21.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">and kanban (DHL)</text>
+<rect x="202" y="4" width="88" height="24" rx="2" fill="#ffffff" stroke="#8d6e63" stroke-width="0.9" stroke-dasharray="3,2"/>
+<text x="246.0" y="14.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Full-kit gate</text><text x="246.0" y="21.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">(proposed)</text>
+<rect x="300" y="4" width="88" height="24" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="344.0" y="14.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Wholesale plan</text><text x="344.0" y="21.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">and S&amp;OP</text>
+<rect x="398" y="4" width="88" height="24" rx="2" fill="#ffffff" stroke="#8d6e63" stroke-width="0.9" stroke-dasharray="3,2"/>
+<text x="442.0" y="14.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Retail–wholesale gap</text><text x="442.0" y="21.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">as KPI (proposed)</text>
+<rect x="104" y="208" width="88" height="22" rx="2" fill="#f4f4f2" stroke="#9a9993" stroke-width="0.6"/>
+<text x="148.0" y="221.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" fill="#0b0b0b" text-anchor="middle">Safety stock z × σ, daily</text>
+<polyline points="402.0,119.0 278.0,119.0 278.0,86.0" fill="none" stroke="#5b6b7f" stroke-width="0.9" stroke-dasharray="3,2" marker-end="url(#ah)"/>
+<text x="304.0" y="116.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="start">deposits pre-fund Specials build</text>
+<text x="498.0" y="119.2" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="start">Triangle = inventory buffer</text><text x="498.0" y="126.5" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="start">(value-stream mapping symbol).</text><text x="498.0" y="133.8" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="start">Top row = control technique</text><text x="498.0" y="141.1" font-family="Calibri, Carlito, Arial, sans-serif" font-size="6.2" font-weight="normal" font-style="italic" fill="#52514e" text-anchor="start">acting at each point.</text>
+</svg>
