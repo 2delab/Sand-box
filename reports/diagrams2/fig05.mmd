@@ -1,0 +1,54 @@
+flowchart LR
+    subgraph T2["Tier 2 and materials"]
+        direction TB
+        S1["Aluminium, carbon fibre,<br/>hides, semiconductors"]
+        S2["Seat, trim and<br/>electronics sub-tiers"]
+        S1 ~~~ S2
+    end
+    subgraph T1["Tier 1 and partners"]
+        direction TB
+        M1["Mercedes-AMG: V8 and<br/>E/E architecture"]
+        M2["ZF, Bilstein, Michelin,<br/>Pirelli"]
+        M3["Bowers and Wilkins,<br/>Bridge of Weir leather"]
+        M4["Specials network:<br/>Cosworth, Multimatic"]
+        M5["Lucid: BEV parts<br/>contracted, none bought"]
+        M1 ~~~ M2 ~~~ M3 ~~~ M4 ~~~ M5
+    end
+    subgraph LOG["Inbound logistics"]
+        direction TB
+        L1["DHL Supply Chain:<br/>2017, extended to 2027"]
+        L2["Wellesbourne and<br/>St Athan hubs"]
+        L3["Sequenced and kitted<br/>line feed"]
+        L1 --> L2 --> L3
+    end
+    subgraph PLT["AML plants"]
+        direction TB
+        P1["Gaydon: core cars<br/>and Specials"]
+        P2["St Athan: DBX"]
+        P3["Newport Pagnell:<br/>Works and heritage"]
+        P1 ~~~ P2 ~~~ P3
+    end
+    CODP{{"Decoupling point<br/>for core cars:<br/>spec and final build"}}
+    subgraph DOWN["Downstream"]
+        direction TB
+        W1["Outbound road and<br/>sea carriers"]
+        W2["156 dealers in<br/>53 countries"]
+        W3["Dealer stock buffer:<br/>destocks 2020 and 2026"]
+        W4(["Customers: Americas<br/>34 per cent in 2025"])
+        W1 --> W2 --> W3 --> W4
+    end
+    LEANZ["Upstream of the CODP:<br/>lean, forecast-driven,<br/>single-sourced"]
+    AGZ["Downstream of the CODP:<br/>order-driven, agile,<br/>dealer-buffered"]
+    SPEC["Specials: CODP at<br/>engineering, pre-sold<br/>against deposits"]
+    T2 --> T1
+    T1 --> LOG
+    LOG --> PLT
+    PLT --> CODP
+    CODP --> DOWN
+    LEANZ -.- LOG
+    AGZ -.- DOWN
+    SPEC -.- T1
+    classDef codp fill:#e3f2fd,stroke:#1565c0,stroke-width:3px,color:#000
+    classDef zone fill:#f5f5f5,stroke:#616161,stroke-dasharray:3 3,color:#000
+    class CODP codp
+    class LEANZ,AGZ,SPEC zone

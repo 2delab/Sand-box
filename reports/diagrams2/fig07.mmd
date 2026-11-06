@@ -1,0 +1,48 @@
+flowchart TB
+    subgraph OPS["Operations initiatives"]
+        direction TB
+        O1["Renewable electricity<br/>with REGOs since 2019"]
+        O2["Gas cuts and ISO 50001<br/>at both plants, 2025"]
+        O3["Near-zero landfill;<br/>waste down 14 per cent"]
+        O4["Safety programme:<br/>7 lost-time accidents"]
+        O1 ~~~ O2 ~~~ O3 ~~~ O4
+    end
+    subgraph SC["Supply chain initiatives"]
+        direction TB
+        S1["Code of Conduct and<br/>Responsible Procurement"]
+        S2["Supplier SAQ for top<br/>100 suppliers, to verify"]
+        S3["DHL HVO, bio-LNG and<br/>e-vans: 663 t in 2026"]
+        S4["LWG Gold leather;<br/>green aluminium trials"]
+        S1 ~~~ S2 ~~~ S3 ~~~ S4
+    end
+    subgraph PRD["Product and people"]
+        direction TB
+        R1["Valhalla plug-in<br/>hybrid, 999 units"]
+        R2["First BEV moved from<br/>2025 to 2033 to 2035"]
+        R3["Apprentices: 25 in<br/>2024, none in 2025"]
+        R4["Women in leadership<br/>c.17 against 25 per cent"]
+        R1 ~~~ R2 ~~~ R3 ~~~ R4
+    end
+    subgraph OUTC["Measured outcomes"]
+        direction LR
+        U1["Scope 1+2 down 12<br/>per cent since 2022"]
+        U2["Scope 3 excluding use<br/>up 32 per cent"]
+        U3["SBTi exit; net zero<br/>moved 2039 to 2050"]
+        U4["CDP Climate C to B;<br/>MSCI A to BBB"]
+        U1 ~~~ U2 ~~~ U3 ~~~ U4
+    end
+    subgraph TRUST["Stakeholder effect"]
+        direction LR
+        K1["Disclosure raters:<br/>trust rising"]
+        K2["Risk raters, investors:<br/>trust falling"]
+        K3["Viability bound by<br/>£1.57bn net debt"]
+        K1 ~~~ K2 ~~~ K3
+    end
+    OPS --> OUTC
+    SC --> OUTC
+    PRD --> OUTC
+    OUTC --> TRUST
+    classDef good fill:#e8f5e9,stroke:#2e7d32,color:#000
+    classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
+    class O1,O2,O3,O4,U1,K1 good
+    class R2,R3,U2,U3,K2 bottleneck

@@ -1,0 +1,52 @@
+flowchart LR
+    subgraph OC["A Order capture"]
+        direction TB
+        C1(["Customer configures<br/>online or at dealer"]):::cust
+        D1["Dealer: order and<br/>deposit (inferred)"]:::inferred
+        D2{"Q Commission<br/>requested?"}:::dealer
+        A1["AML Q team: design,<br/>feasibility, sign-off"]:::aml
+        A2["AML: specification<br/>frozen before build"]:::aml
+        A3["AML order bank: core<br/>book about 5 months"]:::aml
+        A4{"US-bound car?"}:::aml
+        A5["Ship within quarterly<br/>US tariff quota"]:::aml
+        C1 --> D1 --> D2
+        D2 -->|"No"| A2
+        D2 -->|"Yes, adds weeks"| A1
+        A1 --> A2 --> A3 --> A4
+        REL(["Released to<br/>planning"]):::aml
+        A4 -->|"Yes"| A5
+        A4 -->|"No"| REL
+        A5 --> REL
+    end
+    subgraph PS["B Plan and supply"]
+        direction TB
+        PP1["Planning: slot, VIN<br/>and sequence<br/>(inferred)"]:::inferred
+        PP2["MRP explodes bill of<br/>materials, call-offs"]:::plan
+        SU1["Suppliers: Mercedes-AMG,<br/>ZF, seats, leather"]:::supp
+        SU2["DHL: collect, store,<br/>sequence and kit"]:::supp
+        PP1 --> PP2 --> SU1 --> SU2
+    end
+    subgraph BD["C Build and deliver"]
+        direction TB
+        PL1["Plant: build at Gaydon<br/>or St Athan, Fig. 2"]:::plant
+        PL2{"All parts and right<br/>first time?"}:::plant
+        PL3["Hold or rectify:<br/>hidden factory"]:::stall
+        PL4["Final inspection<br/>and release"]:::plant
+        LO1["Outbound by road<br/>or sea (inferred)"]:::inferred
+        D3["Dealer PDI and<br/>handover (inferred)"]:::inferred
+        C2(["Customer delivery:<br/>5 to 8 months total"]):::cust
+        PL1 --> PL2
+        PL2 -->|"No"| PL3
+        PL3 --> PL2
+        PL2 -->|"Yes"| PL4
+        PL4 --> LO1 --> D3 --> C2
+    end
+    OC --> PS --> BD
+    classDef cust fill:#e8eaf6,stroke:#3949ab,color:#000
+    classDef dealer fill:#e0f2f1,stroke:#00796b,color:#000
+    classDef aml fill:#e3f2fd,stroke:#1565c0,color:#000
+    classDef plan fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    classDef supp fill:#fff3e0,stroke:#e65100,color:#000
+    classDef plant fill:#f1f8e9,stroke:#558b2f,color:#000
+    classDef stall fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
+    classDef inferred fill:#fff8e1,stroke:#8d6e63,stroke-dasharray:5 5,color:#000

@@ -1,0 +1,55 @@
+flowchart LR
+    subgraph RAW["Inbound and production"]
+        direction TB
+        I1["Suppliers ship to<br/>DHL hubs"]
+        I2["Production stock:<br/>part of £157.7m, 2023"]
+        I3["Control: MRP call-offs,<br/>JIS kitting, kanban"]
+        I1 --> I2
+        I3 -.- I2
+    end
+    subgraph WIPG["Work in progress"]
+        direction TB
+        W1["WIP £33.2m 2023,<br/>£48.5m 2022"]
+        W2["Stalled WIP: cars<br/>awaiting parts"]
+        W3["Control: parts gate,<br/>right first time"]
+        W1 --> W2
+        W3 -.- W1
+    end
+    subgraph FGD["Finished vehicles"]
+        direction TB
+        F1["Finished vehicles<br/>£81.8m, 2023"]
+        F2["of which service<br/>cars £49.0m"]
+        F3["Control: wholesale<br/>plan and S and OP"]
+        F1 --> F2
+        F3 -.- F1
+    end
+    subgraph CHN["Dealer channel"]
+        direction TB
+        C1["Dealer stock, off<br/>AML balance sheet"]
+        C2["Destocks: 1,580 units<br/>2020; again 2025 to 2026"]
+        C3["Control: retail versus<br/>wholesale gap"]
+        C4(["Customer"])
+        C1 --> C4
+        C2 -.- C1
+        C3 -.- C1
+    end
+    subgraph AFT["Service parts"]
+        direction TB
+        A1["Parts for resale,<br/>c.80,000 SKUs"]
+        A2["Control: ToolsGroup<br/>daily safety stock,<br/>97.1 per cent FTA"]
+        A3["Works heritage parts<br/>remanufactured"]
+        A2 -.- A1
+        A1 --> A3
+    end
+    DEP["Specials deposits<br/>pre-fund build: £336m<br/>2022, £272m 2023"]
+    FIN["Inventory repurchase<br/>financing c.£38m to<br/>£40m a year"]
+    RAW --> WIPG
+    WIPG --> FGD
+    FGD -->|"Wholesale"| CHN
+    RAW --> AFT
+    DEP -.-> WIPG
+    FIN -.- RAW
+    classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
+    classDef control fill:#e8f5e9,stroke:#2e7d32,color:#000
+    class W2,C2 bottleneck
+    class I3,W3,F3,C3,A2 control

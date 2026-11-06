@@ -1,0 +1,50 @@
+flowchart LR
+    FROM(["From part a:<br/>painted body"])
+    subgraph TRIM["3 Trim and final"]
+        direction TB
+        T1["Painted body loaded<br/>onto indexed line"]
+        T2["Trim shop: hides cut,<br/>hand-stitched, seats"]
+        T3["Harness, E/E modules<br/>and interior fitted"]
+        T4["Powertrain marriage:<br/>AMG V8 or V12"]
+        T5["Wheels, fluids, closures,<br/>software flash<br/>(inferred)"]
+        T6{"All parts<br/>present?"}
+        T7["Held as WIP awaiting<br/>parts: 350 DBX707s,<br/>June 2022"]
+        T1 --> T3
+        T2 --> T3
+        T3 --> T4 --> T5 --> T6
+        T6 -->|"No"| T7
+        T7 -->|"Part arrives"| T5
+    end
+    subgraph TEST["4 Test and audit"]
+        direction TB
+        E1["Settle run over<br/>speed bumps"]
+        E2["Water leak test"]
+        E3["Rolling-road test,<br/>no track on site"]
+        E4{"Right first time?<br/>c.65 per cent 2024,<br/>95 per cent 2025"}
+        E5["Off-line rectification<br/>loop: hidden factory"]
+        E6["Named final inspector<br/>signs off car"]
+        E1 --> E2 --> E3 --> E4
+        E4 -->|"No"| E5
+        E5 --> E4
+        E4 -->|"Yes"| E6
+    end
+    subgraph DISP["5 Release and dispatch"]
+        direction TB
+        D1["Release to vehicle<br/>yard (inferred)"]
+        D2{"UK or export<br/>market?"}
+        D3["Enclosed road<br/>transporter to dealer"]
+        D4["Road to port, sea<br/>freight (inferred)"]
+        D5["Dealer PDI and<br/>handover (inferred)"]
+        D1 --> D2
+        D2 -->|"UK"| D3
+        D2 -->|"Export"| D4
+        D3 --> D5
+        D4 --> D5
+    end
+    FROM --> TRIM
+    TRIM -->|"Complete"| TEST
+    TEST -->|"Signed off"| DISP
+    classDef bottleneck fill:#f8d7da,stroke:#b03a2e,stroke-width:3px,color:#000
+    classDef inferred fill:#fff8e1,stroke:#8d6e63,stroke-dasharray:5 5,color:#000
+    class T7,E5 bottleneck
+    class T5,D1,D4,D5 inferred

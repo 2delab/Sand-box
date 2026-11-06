@@ -1,0 +1,41 @@
+flowchart LR
+    subgraph TRD["Transformed inputs"]
+        direction TB
+        T1["Mercedes-AMG V8 and<br/>E/E architecture"]
+        T2["Bonded aluminium and<br/>carbon structures"]
+        T3["Leather, tyres, audio,<br/>seats, electronics"]
+        T4["Customer specification<br/>and Specials deposits"]
+        T1 ~~~ T2 ~~~ T3 ~~~ T4
+    end
+    subgraph TRG["Transforming inputs"]
+        direction TB
+        G1["Gaydon: sports, GT<br/>and Specials builds"]
+        G2["St Athan: DBX line,<br/>20-minute takt"]
+        G3["c.2,800 staff, about<br/>200 labour-hours a car"]
+        G4["Capex £185m to £401m<br/>a year, 2018 to 2025"]
+        G1 ~~~ G2 ~~~ G3 ~~~ G4
+    end
+    subgraph PROC["Transformation"]
+        direction TB
+        P1["Body: bond, rivet<br/>and oven cure"]
+        P2["Paint: 25 to 50 hours<br/>with hand polish"]
+        P3["Trim, assembly, test<br/>and named inspection"]
+        P4["Specials: dedicated<br/>project build areas"]
+        P1 --> P2 --> P3
+        P3 ~~~ P4
+    end
+    subgraph OUT["Outputs"]
+        direction TB
+        O1["5,400 to 6,600 cars<br/>a year, 2021 to 2025"]
+        O2["Q personalisation<br/>and Specials"]
+        O3["Works heritage<br/>and after-sales"]
+        O4["Emissions, waste,<br/>jobs and skills"]
+        O1 ~~~ O2 ~~~ O3 ~~~ O4
+    end
+    PERF{{"Five objectives: quality,<br/>speed, dependability,<br/>flexibility and cost"}}
+    FB(["Feedback to capacity,<br/>supply and launch plans"])
+    TRD --> PROC
+    TRG --> PROC
+    PROC --> OUT
+    OUT -.->|"Measured against"| PERF
+    PERF -.-> FB
